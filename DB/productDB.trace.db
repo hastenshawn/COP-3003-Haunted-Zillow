@@ -1,0 +1,2983 @@
+2019-09-16 19:50:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEE" not found; SQL statement:
+SELECT * FROM employee; [42102-199]
+2019-09-16 19:50:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEE" not found; SQL statement:
+INSERT INTO employee (uid, name) VALUES (?, ?) [42102-199]
+2019-10-24 01:30:25 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Wrong user name or password [28000-199]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:126)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:299)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:782)
+	at org.h2.server.web.WebApp.login(WebApp.java:1004)
+	at org.h2.server.web.WebApp.process(WebApp.java:219)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 20 more
+2019-10-24 01:31:27 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Wrong user name or password [28000-199]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:126)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:299)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:782)
+	at org.h2.server.web.WebApp.test(WebApp.java:943)
+	at org.h2.server.web.WebApp.process(WebApp.java:234)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 20 more
+2019-10-24 01:31:33 jdbc[3]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:242)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:182)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:299)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:782)
+	at org.h2.server.web.WebApp.test(WebApp.java:943)
+	at org.h2.server.web.WebApp.process(WebApp.java:234)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 15 more
+2019-10-24 01:45:48 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ProductDBManager.<init>(ProductDBManager.java:17)
+	at Main.main(Main.java:10)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 20 more
+2019-10-24 01:46:10 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at ProductDBManager.<init>(ProductDBManager.java:17)
+	at Main.main(Main.java:10)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 20 more
+2019-10-24 01:52:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CUSTOMERS (    EMAIL VARCHAR(255),    FIRSTNAME VARCHAR(255),    LASTNAME VARCHAR(255),    PHONENUMBER BIGINT    LASTFOURCC[*] INT); "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE customers (    email varchar(255),    firstName varchar(255),    lastName varchar(255),    phoneNumber bigint    lastFourCC int); [42001-199]
+2019-10-24 01:53:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CUSTOMERS (    EMAIL VARCHAR(255),    FIRSTNAME VARCHAR(255),    LASTNAME VARCHAR(255),    PHONENUMBER BIGINT    LASTFOURCC[*] INT); "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE customers (    email varchar(255),    firstName varchar(255),    lastName varchar(255),    phoneNumber bigint    lastFourCC int); [42001-199]
+2019-10-24 01:55:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CUSTOMERS (    EMAIL VARCHAR(255),    FIRSTNAME VARCHAR(255),    LASTNAME VARCHAR(255),    PHONENUMBER BIGINT    LASTFOURCC[*] INT); "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE customers (    email varchar(255),    firstName varchar(255),    lastName varchar(255),    phoneNumber bigint    lastFourCC int); [42001-199]
+2019-10-24 01:56:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CUSTOMERS (    EMAIL VARCHAR(255),    FIRSTNAME VARCHAR(255),    LASTNAME VARCHAR(255),    PHONENUMBER BIGINT    LASTFOURCC[*] INT); "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE customers (    email varchar(255),    firstName varchar(255),    lastName varchar(255),    phoneNumber bigint    lastFourCC int); [42001-199]
+2019-10-24 02:05:47 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at ProductDBManager.<init>(ProductDBManager.java:15)
+	at Main.main(Main.java:10)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 20 more
+2019-10-24 09:21:17 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Wrong user name or password [28000-199]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:126)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:299)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:782)
+	at org.h2.server.web.WebApp.login(WebApp.java:1004)
+	at org.h2.server.web.WebApp.process(WebApp.java:219)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 20 more
+2019-10-24 09:21:32 jdbc[4]: java.lang.Exception: Open Stack Trace
+	at org.h2.util.CloseWatcher.register(CloseWatcher.java:100)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:183)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:299)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:782)
+	at org.h2.server.web.WebApp.login(WebApp.java:1004)
+	at org.h2.server.web.WebApp.process(WebApp.java:219)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:242)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:182)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:299)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:782)
+	at org.h2.server.web.WebApp.login(WebApp.java:1004)
+	at org.h2.server.web.WebApp.process(WebApp.java:219)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 15 more
+2019-10-24 09:21:32 jdbc[4]: java.lang.Exception: Open Stack Trace
+	at org.h2.util.CloseWatcher.register(CloseWatcher.java:100)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:183)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:299)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:782)
+	at org.h2.server.web.WebApp.login(WebApp.java:1004)
+	at org.h2.server.web.WebApp.process(WebApp.java:219)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:242)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:182)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:299)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:782)
+	at org.h2.server.web.WebApp.login(WebApp.java:1004)
+	at org.h2.server.web.WebApp.process(WebApp.java:219)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 15 more
+2019-10-24 09:21:32 jdbc[4]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:242)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:182)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:299)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:782)
+	at org.h2.server.web.WebApp.login(WebApp.java:1004)
+	at org.h2.server.web.WebApp.process(WebApp.java:219)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 15 more
+2019-10-24 09:25:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCESSID" not found; SQL statement:
+INSERT INTO accessID (    accessID,)VALUES(?,?,?,?,?) [42102-199]
+2019-10-24 09:25:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCESSID" not found; SQL statement:
+INSERT INTO accessID (    accessID,)VALUES(?) [42102-199]
+2019-10-24 09:27:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ACCESSID (    ACCESSID INT NOT NULL)VALUES[*](?) "; SQL statement:
+CREATE TABLE accessID (    accessID INT NOT NULL)VALUES(?) [42000-199]
+2019-10-24 09:28:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCESSID" already exists; SQL statement:
+CREATE TABLE accessID (    accessID INT NOT NULL); [42101-199]
+2019-10-24 09:35:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE EMPLOYEES (    EMPLOYEEID INT NOT NULL    FIRSTNAME[*] VARCHAR(255) NOT NULL    LASTNAME VARCHAR(255) NOT NULL    ACCESSID INT NOT NULL); "; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE employees (    employeeID INT NOT NULL    firstName VARCHAR(255) NOT NULL    lastName VARCHAR(255) NOT NULL    accessID INT NOT NULL); [42001-199]
+2019-10-24 09:36:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (    EMPLOYEEID    FIRSTNAME[*]    LASTNAME    ACCESSID)VALUES(?,?,?,?) "; expected ",, )"; SQL statement:
+INSERT INTO employees (    employeeID    firstName    lastName    accessID)VALUES(?,?,?,?) [42001-199]
+2019-10-24 09:36:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEES" already exists; SQL statement:
+CREATE TABLE employees (    employeeID INT NOT NULL,    firstName VARCHAR(255) NOT NULL,    lastName VARCHAR(255) NOT NULL,    accessID INT NOT NULL); [42101-199]
+2019-10-24 12:21:45 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at ProductDBManager.<init>(ProductDBManager.java:15)
+	at Main.main(Main.java:10)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 20 more
+2019-10-24 12:24:41 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at ProductDBManager.<init>(ProductDBManager.java:15)
+	at Main.main(Main.java:10)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 20 more
+2019-10-24 12:25:42 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at ProductDBManager.<init>(ProductDBManager.java:15)
+	at Main.main(Main.java:10)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 20 more
+2019-10-24 12:26:54 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at ProductDBManager.<init>(ProductDBManager.java:15)
+	at Main.main(Main.java:10)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/H2Test/Database/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 20 more
+2019-10-31 00:41:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "EXEC[*] SP_RENAME 'TEST', 'RESERVATIONS' "; expected "EXPLAIN, EXECUTE"; SQL statement:
+EXEC sp_rename 'TEST', 'RESERVATIONS' [42001-199]
+2019-10-31 00:43:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "TEST" not found; SQL statement:
+ALTER TABLE TEST RENAME CONSTRAINT TEST TO RESERVATIONS [90057-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.ddl.AlterTableRenameConstraint.update(AlterTableRenameConstraint.java:41)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:233)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:1113)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1436)
+	at org.h2.server.web.WebApp.query(WebApp.java:1111)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1073)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1060)
+	at org.h2.server.web.WebThread.process(WebThread.java:173)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-10-31 00:43:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE TEST RENAME CONSTRAINT 'TEST'[*] TO 'RESERVATIONS'"; expected "identifier"; SQL statement:
+ALTER TABLE TEST RENAME CONSTRAINT 'TEST' TO 'RESERVATIONS' [42001-199]
+2019-10-31 00:50:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE RESERVATIONS(
+RESDATE DATE NOT NULL, 
+PAYCOLLECTED BIT NOT NULL.[*]
+TOTAL FLOAT NOT NULL.
+ROOMID INT NOT NULL,
+RESID INT NOT NULL AUTO_INCREMENT,
+CUSTOMEREMAIL VARCHAR(255) NOT NULL
+) "; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE reservations(
+resDate DATE NOT NULL, 
+payCollected BIT NOT NULL.
+total FLOAT NOT NULL.
+roomID INT NOT NULL,
+resID INT NOT NULL AUTO_INCREMENT,
+customerEmail VARCHAR(255) NOT NULL
+) [42001-199]
+2019-10-31 00:50:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE RESERVATIONS(
+RESDATE DATE NOT NULL, 
+PAYCOLLECTED BIT NOT NULL.[*]
+TOTAL FLOAT NOT NULL.
+ROOMID INT NOT NULL,
+RESID INT NOT NULL AUTO_INCREMENT,
+CUSTOMEREMAIL VARCHAR(255) NOT NULL,
+) "; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE reservations(
+resDate DATE NOT NULL, 
+payCollected BIT NOT NULL.
+total FLOAT NOT NULL.
+roomID INT NOT NULL,
+resID INT NOT NULL AUTO_INCREMENT,
+customerEmail VARCHAR(255) NOT NULL,
+) [42001-199]
+2019-10-31 00:50:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE RESERVATIONS(
+RESDATE DATE NOT NULL, 
+PAYCOLLECTED BIT NOT NULL.[*]
+TOTAL FLOAT NOT NULL,
+ROOMID INT NOT NULL,
+RESID INT NOT NULL AUTO_INCREMENT,
+CUSTOMEREMAIL VARCHAR(255) NOT NULL,
+) "; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE reservations(
+resDate DATE NOT NULL, 
+payCollected BIT NOT NULL.
+total FLOAT NOT NULL,
+roomID INT NOT NULL,
+resID INT NOT NULL AUTO_INCREMENT,
+customerEmail VARCHAR(255) NOT NULL,
+) [42001-199]
+2019-10-31 00:50:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE RESERVATIONS(
+RESDATE DATE NOT NULL, 
+PAYCOLLECTED BIT NOT NULL.[*]
+TOTAL FLOAT NOT NULL,
+ROOMID INT NOT NULL,
+RESID INT NOT NULL AUTO_INCREMENT,
+CUSTOMEREMAIL VARCHAR(255) NOT NULL
+) "; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE reservations(
+resDate DATE NOT NULL, 
+payCollected BIT NOT NULL.
+total FLOAT NOT NULL,
+roomID INT NOT NULL,
+resID INT NOT NULL AUTO_INCREMENT,
+customerEmail VARCHAR(255) NOT NULL
+) [42001-199]
+2019-10-31 01:01:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "RESDATE" not found; SQL statement:
+INSERT INTO employees (    resDate,    payCollected,    total,    roomID    customerEmail)VALUES(?,?,?,?) [42122-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:708)
+	at org.h2.command.Parser.parseColumn(Parser.java:1377)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1362)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1731)
+	at org.h2.command.Parser.parseInsert(Parser.java:1684)
+	at org.h2.command.Parser.parsePrepared(Parser.java:891)
+	at org.h2.command.Parser.parse(Parser.java:788)
+	at org.h2.command.Parser.parse(Parser.java:760)
+	at org.h2.command.Parser.prepareCommand(Parser.java:683)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.engine.Session.prepareCommand(Session.java:565)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349)
+	at connManager.setReservation(connManager.java:96)
+	at Main.main(Main.java:15)
+2019-10-31 01:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "RESDATE" not found; SQL statement:
+INSERT INTO employees (    resDate,    payCollected,    total,    roomID    customerEmail)VALUES(?,?,?,?,?) [42122-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:708)
+	at org.h2.command.Parser.parseColumn(Parser.java:1377)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1362)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1731)
+	at org.h2.command.Parser.parseInsert(Parser.java:1684)
+	at org.h2.command.Parser.parsePrepared(Parser.java:891)
+	at org.h2.command.Parser.parse(Parser.java:788)
+	at org.h2.command.Parser.parse(Parser.java:760)
+	at org.h2.command.Parser.prepareCommand(Parser.java:683)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.engine.Session.prepareCommand(Session.java:565)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349)
+	at connManager.setReservation(connManager.java:96)
+	at Main.main(Main.java:15)
+2019-10-31 01:03:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO RESERVATIONS (    RESDATE,    PAYCOLLECTED,    TOTAL,    ROOMID    CUSTOMEREMAIL[*])VALUES(?,?,?,?,?) "; expected ",, )"; SQL statement:
+INSERT INTO reservations (    resDate,    payCollected,    total,    roomID    customerEmail)VALUES(?,?,?,?,?) [42001-199]
+2019-10-31 01:03:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO RESERVATIONS (    RESDATE,    PAYCOLLECTED,    TOTAL,    ROOMID    CUSTOMEREMAIL[*])VALUES(?,?,?,?,?) "; expected ",, )"; SQL statement:
+INSERT INTO reservations (    resDate,    payCollected,    total,    roomID    customerEmail)VALUES(?,?,?,?,?) [42001-199]
+2019-10-31 01:10:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "RESERVATIONS" not found; SQL statement:
+INSERT INTO reservations (    resDate,    payCollected,    total,    roomID,    customerEmail)VALUES(?,?,?,?,?) [42102-199]
+2019-10-31 01:25:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT TOP 5 * FROM RESERVATIONS [[*]ROOMID]
+ORDER BY ROOMID DESC; "; SQL statement:
+SELECT TOP 5 * FROM RESERVATIONS [roomID]
+ORDER BY roomID DESC; [42000-199]
+2019-10-31 01:26:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT TOP 1 * FROM RESERVATIONS [[*]ROOMID]
+ORDER BY ROOMID DESC; "; SQL statement:
+SELECT TOP 1 * FROM RESERVATIONS [roomID]
+ORDER BY roomID DESC; [42000-199]
+2019-10-31 01:26:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT TOP 1 * FROM RESERVATIONS [[*]ROOMID]
+ORDER BY ROOMID DESC; "; SQL statement:
+SELECT TOP 1 * FROM RESERVATIONS [roomID]
+ORDER BY roomID DESC; [42000-199]
+2019-10-31 01:29:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT TOP 1 * FROM RESERVATIONS [[*]ROOMID]
+ORDER BY ROOMID DESC; "; SQL statement:
+SELECT TOP 1 * FROM RESERVATIONS [roomID]
+ORDER BY roomID DESC; [42000-199]
+2019-10-31 01:37:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT TOP 1 * FROM RESERVATIONS [[*]ROOMID]
+ORDER BY ROOMID DESC; "; SQL statement:
+SELECT TOP 1 * FROM RESERVATIONS [roomID]
+ORDER BY roomID DESC; [42000-199]
+2019-10-31 01:38:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT TOP 1 * FROM RESERVATIONS [[*]ROOMID]
+ORDER BY ROOMID DESC; "; SQL statement:
+SELECT TOP 1 * FROM RESERVATIONS [roomID]
+ORDER BY roomID DESC; [42000-199]
+2019-10-31 01:42:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT TOP 1 * FROM RESERVATIONS [[*]ROOMID]ORDER BY ROOMID DESC; "; SQL statement:
+SELECT TOP 1 * FROM RESERVATIONS [roomID]ORDER BY roomID DESC; [42000-199]
+2019-12-04 18:17:59 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Wrong user name or password [28000-199]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:126)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:299)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:782)
+	at org.h2.server.web.WebApp.login(WebApp.java:1004)
+	at org.h2.server.web.WebApp.process(WebApp.java:219)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 20 more
+2019-12-04 18:39:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "RESERVATION" not found; SQL statement:
+DROP TABLE RESERVATION [42102-199]
+2019-12-04 18:53:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE PROPERTIES
+(
+ADDRESS,
+CITY,
+STATE,
+ZIPCODE,
+ZPID,
+ZESTIMATE
+)
+VALUES[*]
+(95 HECK ST, LYNN, AL,35575,121023548,49441),
+(1552 MONTEREY PL, MOBILE, AL,36604,51015139,403236),
+(619 OUACHITA 65, CAMDEN, AR,71701,76220157,155609),
+(1175 LAFAYETTE 9, BRADLEY, AR,71826,239466433,42992),
+(1001 UNION ST, JONESBORO, AR,72401,90770794,292109),
+(312 S REEVES ST, MONETTE, AR,72447,112607897,108888),
+(3901 W PIONEER RD, PHOENIX, AZ,85086,2114321265,409394),
+(26 SOWLES AVE, BISBEE, AZ,85603,7390125,232346),
+(113 E SAFFORD ST, TOMBSTONE, AZ,85638,7408030,214058),
+(2000 SLAUGHTER HOUSE CANYON RD, KINGMAN, AZ,86401,191822403,200011),
+(5121 FRANKLIN AVE, LOS ANGELES, CA,90027,20809687,4878561),
+(2475 GLENDOWER PL, LOS ANGELES, CA,90027,20809000,3396227),
+(421 N AVE 19, LOS ANGELES, CA,90031,20741187,965709),
+(2400 LAUREL CANYON BLVD, LOS ANGELES, CA,90046,145643454,2492304),
+(8763 WONDERLAND AVE, LOS ANGELES, CA,90046,20800819,849317),
+(8433 SUNSET BLVD, LOS ANGELES, CA,90069,20797301,1608558),
+(1005 N REXFORD DR, BEVERLY HILLS, CA,90210,20522563,19650442),
+(11547 BRADDOCK DR, CULVER CITY, CA,90230,20438974,1092974),
+(480 FOURTH AVE, SAN DIEGO, CA,92101,80620352,422675),
+(1500 ORANGE AVE, CORONADO, CA,92118,2094761925,2379699),
+(2541 PASO ROBLES ST, OCEANO, CA,93445,15437264,598674),
+(2090 JACKSON ST, SAN FRANCISCO, CA,94109,15073498,12874025),
+(1000 LOMBARD ST, SAN FRANCISCO, CA,94109,2085732023,5109912),
+(1990 CALIFORNIA ST, SAN FRANCISCO, CA,94109,2097339728,1013023),
+(2220 SACRAMENTO ST, SAN FRANCISCO, CA,94115,63196697,5496607),
+(6114 CALIFORNIA ST, SAN FRANCISCO, CA,94121,15090939,1864990),
+(46958 ZAPOTEC DR, FREMONT, CA,94539,25027676,1966569),
+(17110 BODEGA LN, BODEGA, CA,94922,119688894,1498347),
+(223 N OREGON ST, YREKA, CA,96097,15978013,486940),
+(420 E 11TH AVE, DENVER, CO,80203,82262709,2619701),
+(31 S MAIN ST, EAST WINDSOR, CT,6088,57708197,74192),
+(77 FOREST ST, HARTFORD, CT,6105,59287335,176700),
+(5 SCHOOLHOUSE CROSSING, WETHERSFIELD, CT,6109,57789526,163692),
+(2A HAMPTON RD, POMFRET CENTER, CT,6259,58117924,254755),
+(152 LYNN DR, MONROE, CT,6468,58789904,504078),
+(208 MERIDEN AVE, SOUTHINGTON, CT,6489,60009341,268659),
+(216 GUNNTOWN RD, NAUGATUCK, CT,6770,111099308,344751),
+(93 MAIN ST, TORRINGTON, CT,6790,197791630,82805),
+(401F STREET NW, WASHINGTON, DC,20001,398609,461593),
+(2201 NORTH CAPITOL ST NE, WASHINGTON, DC,20002,490240,741629),
+(1321 PENNSYLVANIA AVE NW, WASHINGTON, DC,20004,408571,798648),
+(3400 PROSPECT ST NW, WASHINGTON, DC,20007,88798043,9771641),
+(2020 MASSACHUSETTS AVE NW, WASHINGTON, DC,20036,124230849,2817094),
+(2600 M ST NW, WASHINGTON, DC,20037,2093500245,1105806),
+(1600 PENNSYLVANIA AVE NW, WASHINGTON, DC,20500,84074482,415923968),
+(1600 PENNSYLVANIA AVE NW, WASHINGTON, DC,20500,84074482,415923968),
+(530 E CAPE SHORES DR, LEWES, DE,19958,76305264,794633),
+(1320 N 14TH ST, FERNANDINA BEACH, FL,32034,45938424,212554),
+(1307 N BEACH ST, ORMOND BEACH, FL,32174,47997831,229707),
+(1500 WINTER SPRINGS BLVD, WINTER SPRINGS, FL,32708,47657268,281359),
+(3592 KAYLA CIR, OVIEDO, FL,32765,47728499,261137),
+(401 DUVAL ST, KEY WEST, FL,33040,252179577,6035994),
+(534 EATON ST, KEY WEST, FL,33040,2146535798,2776571),
+(403 CLEVELAND ST, CLEARWATER, FL,33755,89745547,732491),
+(5700 OAKVIEW LN, PUNTA GORDA, FL,33950,43564398,237506),
+(5340 JONES RD, ST CLOUD, FL,34771,46312049,444125),
+(992 RIDGE AVE, STONE MOUNTAIN, GA,30083,14527852,232099),
+(416 YORKHOUSE RD, RABUN GAP, GA,30568,2143398896,1337571),
+(436 GREENSBORO RD, EATONTON, GA,31024,245971812,1239715),
+(400 N MADISON AVE, EATONTON, GA,31024,231075073,591764),
+(151 MAIN ST, IRWINTON, GA,31042,112002651,151281),
+(934 GEORGIA AVE, MACON, GA,31201,120156630,575629),
+(107 E BROUGHTON ST, SAVANNAH, GA,31401,133711921,4091993),
+(14 E OGLETHORPE AVE, SAVANNAH, GA,31401,133706304,2968916),
+(429 BULL ST, SAVANNAH, GA,31401,14154487,2763563),
+(32 ABERCORN ST, SAVANNAH, GA,31401,133713781,2515478),
+(123 HABERSHAM ST, SAVANNAH, GA,31401,133710728,2358416),
+(102 W HALL ST, SAVANNAH, GA,31401,133711445,2277484),
+(21 W BAY ST, SAVANNAH, GA,31401,133707114,2047030),
+(225 E BAY ST, SAVANNAH, GA,31401,131743710,2038525),
+(234 MARTIN LUTHER KING JR BLVD, SAVANNAH, GA,31401,131747211,1357321),
+(6 W HARRIS ST, SAVANNAH, GA,31401,133709220,1336155),
+(207 W YORK ST, SAVANNAH, GA,31401,2102064510,362672),
+(GREENWICH RD, SAVANNAH, GA,31404,248655683,327002),
+(14 JW WILLIAMS CT, JESUP, GA,31545,105440186,260319),
+(508 E 2ND ST, VILLISCA, IA,50864,127136745,22420),
+(1952 WARREN WAGON RD, MCCALL, ID,83638,233368524,2203142),
+(201 SPRING ST, DECATUR, IL,62522,84812499,40583),
+(20TH ST, GRAND TOWER, IL,62942,251226757,12891),
+(3801 MADISON AVE, INDIANAPOLIS, IN,46227,1167918,404069),
+(442 W 700 N, VALPARAISO, IN,46385,81497179,200415),
+(302 E BEARDSLEY AVE, ELKHART, IN,46514,138612207,126650),
+(206 W TURNPIKE ST, VEVAY, IN,47043,115592331,371252),
+(714 W WARREN ST, MITCHELL, IN,47446,85550805,187919),
+(917 MILL ST, MT VERNON, IN,47620,85667144,263256),
+(503 N 2ND ST, ATCHISON, KS,66002,122704190,467692),
+(508 N 2ND ST, ATCHISON, KS,66002,233791447,66622),
+(935 SHAWNEE RD, KANSAS CITY, KS,66103,75692755,131555),
+(5325 DOUGLAS AVE, KANSAS CITY, KS,66106,75709299,196050),
+(1100 FREMONT ST, MANHATTAN, KS,66502,2113295739,144329),
+(SW 8TH & SW VAN BUREN, TOPEKA, KS,66612,113180032,66866),
+(1433 RD P, EMPORIA, KS,66801,228561571,200796),
+(90TH ST, FLORENCE, KS,66851,235340696,218620),
+(702 OAK ST, EL DORADO, KS,67042,1320185,182592),
+(420 N DEPOT ST, CHERRYVALE, KS,67335,77240326,115661),
+(2211 S POPE LICK RD, LOUISVILLE, KY,40299,114102223,233906),
+(120 SYCAMORE RD, LEXINGTON, KY,40502,124044361,1893312),
+(201 N MILL ST, LEXINGTON, KY,40507,124045138,1059607),
+(370 N BROADWAY, LEXINGTON, KY,40508,77510826,251821),
+(3970 DIXIE HWY, DRY RIDGE, KY,41035,105818416,66965),
+(227 SUTTON ST, MAYSVILLE, KY,41056,234521678,137491),
+(1300 WINCHESTER AVE, ASHLAND, KY,41101,105727855,88668),
+(16 CORAL HILL-HALFWAY RD, GLASGOW, KY,42141,225204383,32197),
+(2390 GRAPEVINE RD, MADISONVILLE, KY,42431,110367675,37482),
+(1580 BETHLEHEM ACADEMY RD, CECILIA, KY,42724,96934494,94553),
+(110 FRENIER RD, LAPLACE, LA,70068,106115981,157605),
+(621 ESPLANADE AVE, NEW ORLEANS, LA,70116,148976670,1351010),
+(1421 BOURBON ST, NEW ORLEANS, LA,70116,73780994,746174),
+(700 ROYAL ST, NEW ORLEANS, LA,70116,2130422789,674247),
+(833 POLAND AVE, NEW ORLEANS, LA,70117,73795115,659664),
+(1725 ST ROCH AVE, NEW ORLEANS, LA,70117,84454465,357020),
+(519 CHRETIEN POINT RD, SUNSET, LA,70584,106135371,201998),
+(11910 ELLERBE RD, SHREVEPORT, LA,71115,248583379,1102188),
+(885 WASHINGTON MOUNTAIN RD, WASHINGTON, MA,1223,2143810156,196903),
+(172 CHURCH ST, NORTH ADAMS, MA,1247,2101742694,172513),
+(488 BROCKELMAN RD, LANCASTER, MA,1523,57605491,157721),
+(16 OLD DUDLEY RD, OXFORD, MA,1540,60027978,238143),
+(34 EDEN RD, ROCKPORT, MA,1966,56959623,2459102),
+(22 HARDY ST, SALEM, MA,1970,56125282,624531),
+(356 LAFAYETTE ST, SALEM, MA,1970,56123131,320417),
+(28 HOWARD ST, SALEM, MA,1970,62942898,274463),
+(310 ESSEX ST, SALEM, MA,1970,70599570,232130),
+(230 PLAYSTEAD RD, MEDFORD, MA,2155,56274646,646432),
+(346 PINE ST, BRIDGEWATER, MA,2324,57153264,353211),
+(207 SANDWICH ST, PLYMOUTH, MA,2360,246817681,585764),
+(2839 MAIN ST, BARNSTABLE, MA,2630,108612416,730455),
+(15 BREAKWATER RD, BREWSTER, MA,2631,2129997044,2001755),
+(2019 MAIN ST, BREWSTER, MA,2631,2135747878,819881),
+(12402 QUINTETTE LN, BOWIE, MD,20720,37494529,500928),
+(9118 BRANDYWINE RD, CLINTON, MD,20735,175943107,348571),
+(132 OLD NATIONAL PIKE, HAGERSTOWN, MD,21740,2118314896,227863),
+(115 IVY HILL DR, MIDDLETOWN, MD,21769,36876943,467831),
+(30712 MICHIGAN AVE, WESTLAND, MI,48186,88759130,207692),
+(7095 107TH AVE, SOUTH HAVEN, MI,49090,74602251,178115),
+(6282 143RD AVE, HOLLAND, MI,49423,74588688,187228),
+(402 N BRIDGE ST, BELLAIRE, MI,49615,106232277,665455),
+(2515 TOWER RD, VANDERBILT, MI,49795,106295516,143197),
+(502 FISHER ST, MARQUETTE, MI,49855,106476407,131428),
+(6940 KEATS AVE S, COTTAGE GROVE, MN,55016,2211196,1138978),
+(10 E EXCHANGE ST, ST PAUL, MN,55101,2091849485,121617),
+(1500 N LIBERTY ST, INDEPENDENCE, MO,64050,2292277,1032036),
+(219 N DELAWARE ST, INDEPENDENCE, MO,64050,2307144,355095),
+(3394 N PEACE CHURCH AVE, JOPLIN, MO,64801,125608505,109197),
+(1615 GRAND AVE, CARTHAGE, MO,64836,74904912,235780),
+(212 SPRINGFIELD ST, REEDS, MO,64859,125591131,68767),
+(1445 HARRISON ST, VICKSBURG, MS,39180,78104213,292902),
+(2243 WAYNESBORO SHUBUTA RD, WAYNESBORO, MS,39367,235512246,124320),
+(415 E MAIN ST, JAMESTOWN, NC,27282,55373643,2335534),
+(705 GIMGHOUL RD, CHAPEL HILL, NC,27514,50038109,1816144),
+(307 FRONT ST, BEAUFORT, NC,28516,102095687,881127),
+(511 BROAD ST, NEW BERN, NC,28560,240153791,261712),
+(341 SPLIT ROCK RD, BOONTON, NJ,7005,39497457,355783),
+(178 CLINTON RD, WEST CALDWELL, NJ,7006,38741319,454788),
+(131 MOUNTAIN RD, BASKING RIDGE, NJ,7920,39843951,690300),
+(500 W COLLINGS AVE, COLLINGSWOOD, NJ,8107,38287907,280299),
+(57 N SHORE RD, ABSECON, NJ,8201,114467686,269560),
+(720 WASHINGTON ST, CAPE MAY, NJ,8204,121944221,1086906),
+(200 CONGRESS PL, CAPE MAY, NJ,8204,38335336,1024195),
+(1301 BEACH AVE, CAPE MAY, NJ,8204,2146386162,617427),
+(915 E MOSS MILL RD, ABSECON, NJ,8205,37808395,132397),
+(217 4TH ST, FIELDSBORO, NJ,8505,38104964,169064),
+(56 MAIN ST, CLINTON, NJ,8809,38834605,430846),
+(76 MAIN ST, FLEMINGTON, NJ,8822,38841585,284287),
+(423 CENTRAL AVE NW, ALBUQUERQUE, NM,87102,183435817,410688),
+(PENITENTIARY RD, SANTA FE, NM,87508,295822508,1536858),
+(33 BLACK CANYON RD, SANTA FE, NM,87508,102022691,591909),
+(14 W 34TH ST, NEW YORK, NY,10001,2119087355,1709622),
+(29 E 4TH ST, NEW YORK, NY,10003,30671177,1608421),
+(14 W 10TH ST, NEW YORK, NY,10011,2105449928,636000),
+(1 W 72ND ST, NEW YORK, NY,10023,244750263,2124702),
+(1 LAVETA PL, NYACK, NY,10960,32384985,1834979),
+(108 OCEAN AVE, AMITYVILLE, NY,11701,32596605,663853),
+(135 W GATE DR, HUNTINGTON, NY,11743,59580960,6346518),
+(228 GROVE AVE, PATCHOGUE, NY,11772,59544501,264316),
+(1568 CLAUVERWIE RD, MIDDLEBURGH, NY,12122,84109088,217424),
+(4 VAN WYCK LN, WAPPINGERS FALLS, NY,12590,30096905,437149),
+(12 PELLS CT, POUGHKEEPSIE, NY,12601,30108398,153211),
+(609 CRAIGIE CLAIR RD, ROSCOE, NY,12776,32780862,354512),
+(302 MAIN ST, ONEIDA, NY,13421,30824368,193982),
+(4700 W MAIN ST, FREDONIA, NY,14063,29922290,140353),
+(313 W 5TH AVE, COLUMBUS, OH,43201,33827874,686106),
+(2678 COUNTY LINE RD, MADISON, OH,44057,203277827,192575),
+(3792 S RACCOON RD, CANFIELD, OH,44406,34835744,134027),
+(6900 MAUD HUGHES RD, LIBERTY TOWNSHIP, OH,45011,33163611,158233),
+(1241 ELM ST, CINCINNATI, OH,45202,2082287841,529631),
+(101 FRONT ST, MARIETTA, OH,45750,75127551,138196),
+(1141 PAWNEE BILL RD, PAWNEE, OK,74058,86095183,76669),
+(28648 SW PARIS AVE, WILSONVILLE, OR,97070,246334578,340194),
+(707 SE 12TH AVE, PORTLAND, OR,97214,176564314,626266),
+(100 FRONT ST, WOLF CREEK, OR,97497,213060135,306630),
+(1250 SISKIYOU BLVD, ASHLAND, OR,97520,48364735,365002),
+(20000 CAVES HWY, CAVE JUNCTION, OR,97523,213090677,176579),
+(201 MAIN ST, KLAMATH FALLS, OR,97601,75160402,42607),
+(1459 N MAIN ST, GRANITE, OR,97877,194171110,81644),
+(284 NUTMEG RD, SAXTON, PA,16678,241425775,314831),
+(15 W MAIN ST, FAIRFIELD, PA,17320,2138624315,662808),
+(912 BALTIMORE PIKE, GETTYSBURG, PA,17325,213029265,137271),
+(1217 MARION ST, DUNMORE, PA,18509,9559446,133871),
+(10 W FERRY ST, NEW HOPE, PA,18938,2098952216,1203660),
+(6300 HARDIN RD, BENSALEM, PA,19020,8947572,303473),
+(321 S 4TH ST, PHILADELPHIA, PA,19106,10195967,662862),
+(138 S 2ND ST, PHILADELPHIA, PA,19106,2140403040,436974),
+(111 W MERMAID LN, PHILADELPHIA, PA,19118,10214535,1286205),
+(501 W ALLENS LN, PHILADELPHIA, PA,19119,10214393,815682),
+(PINE ST & 3RD ST, PHILADELPHIA, PA,19147,63498000,293909),
+(1260 THORNBURY RD, WEST CHESTER, PA,19382,67347507,857070),
+(1677 ROUND TOP RD, BURRILLVILLE, RI,2830,65889297,452385),
+(191 CEDAR SPRINGS RD, SPARTANBURG, SC,29302,11831319,482876),
+(117 WILSON RD, UNION, SC,29379,120417637,263297),
+(20 S BATTERY, CHARLESTON, SC,29401,2116149683,3458587),
+(135 CHURCH ST, CHARLESTON, SC,29401,2088807331,1208237),
+(114 RUTLEDGE AVE, CHARLESTON, SC,29401,2138054534,533270),
+(4 ARCHDALE ST, CHARLESTON, SC,29401,2084332934,523235),
+(15 CANNON ST, GEORGETOWN, SC,29440,10981896,554516),
+(921 PRINCE ST, GEORGETOWN, SC,29440,10981531,532967),
+(3083 CHARLESTON HWY, AIKEN, SC,29801,52162277,522158),
+(1377 GREGG HWY, GRANITEVILLE, SC,29829,303790676,150898),
+(411 CRAVEN ST, BEAUFORT, SC,29902,68767019,2448231),
+(501 KING ST, BEAUFORT, SC,29902,68766950,1520692),
+(CENTER AVE, GARRETSON, SD,57030,201339552,130200),
+(1210 2ND AVE NW, ABERDEEN, SD,57401,299354631,150171),
+(107 W M.L.K. BLVD, CHATTANOOGA, TN,37402,247379854,308407),
+(1311 FLANDERS LN, MARYVILLE, TN,37803,81021856,246948),
+(680 ADAMS AVE, MEMPHIS, TN,38105,82697828,1508263),
+(510 OLEN ST, WICHITA FALLS, TX,76301,304077302,27138),
+(211 N PLEASANT ST, HILLSBORO, TX,76645,87330704,145365),
+(12654 WOMAN HOLLERING RD, SCHERTZ, TX,78154,26183617,458417),
+(12538 WOMAN HOLLERING RD, SCHERTZ, TX,78154,102500056,389179),
+(638 FORT CONCHO, SAN ANTONIO, TX,78245,124855510,244532),
+(302 W 24TH ST, AUSTIN, TX,78712,29394173,258033),
+(149 SPLIT RAIL LN, SMITHVILLE, TX,78957,84385975,356983),
+(20850 OATLANDS PLANTATION LN, LEESBURG, VA,20175,110692187,2305080),
+(20850 OATLANDS PLANTATION LN, LEESBURG, VA,20175,110692187,2305080),
+(5914 MONTICELLO RD, ALEXANDRIA, VA,22303,51925939,436299),
+(HAW BRANCH LN, AMELIA COURT HOUSE, VA,23002,250672391,199114),
+(4800 JOHN TYLER MEMORIAL HWY, CHARLES CITY, VA,23030,79072329,561367),
+(201 HIGH ST, FARMVILLE, VA,23901,117460000,173983),
+(459 THOMAS BRIDGE RD, MARION, VA,24354,113824103,104888),
+(103 VALLEY CENTER DR, STAUNTON, VA,24401,249827350,749707),
+(531 THORNROSE AVE, STAUNTON, VA,24401,249827477,493130),
+(744 CLAY ST, PORT TOWNSEND, WA,98368,226734768,949457),
+(651 CLEVELAND ST, PORT TOWNSEND, WA,98368,2108950227,450590),
+(1201 MAIN RD, WASHINGTON, WI,54246,104958675,372627),
+(N3754 1000TH ST, EAU CLAIRE, WI,54703,104968311,126851) "; SQL statement:
+CREATE TABLE PROPERTIES
+(
+Address,
+City,
+State,
+ZipCode,
+ZPID,
+Zestimate
+)
+Values
+(95 Heck St, Lynn, AL,35575,121023548,49441),
+(1552 Monterey Pl, Mobile, AL,36604,51015139,403236),
+(619 Ouachita 65, Camden, AR,71701,76220157,155609),
+(1175 Lafayette 9, Bradley, AR,71826,239466433,42992),
+(1001 Union St, Jonesboro, AR,72401,90770794,292109),
+(312 S Reeves St, Monette, AR,72447,112607897,108888),
+(3901 W Pioneer Rd, Phoenix, AZ,85086,2114321265,409394),
+(26 Sowles Ave, Bisbee, AZ,85603,7390125,232346),
+(113 E Safford St, Tombstone, AZ,85638,7408030,214058),
+(2000 Slaughter House Canyon Rd, Kingman, AZ,86401,191822403,200011),
+(5121 Franklin Ave, Los Angeles, CA,90027,20809687,4878561),
+(2475 Glendower Pl, Los Angeles, CA,90027,20809000,3396227),
+(421 N Ave 19, Los Angeles, CA,90031,20741187,965709),
+(2400 Laurel Canyon Blvd, Los Angeles, CA,90046,145643454,2492304),
+(8763 Wonderland Ave, Los Angeles, CA,90046,20800819,849317),
+(8433 Sunset Blvd, Los Angeles, CA,90069,20797301,1608558),
+(1005 N Rexford Dr, Beverly Hills, CA,90210,20522563,19650442),
+(11547 Braddock Dr, Culver City, CA,90230,20438974,1092974),
+(480 Fourth Ave, San Diego, CA,92101,80620352,422675),
+(1500 Orange Ave, Coronado, CA,92118,2094761925,2379699),
+(2541 Paso Robles St, Oceano, CA,93445,15437264,598674),
+(2090 Jackson St, San Francisco, CA,94109,15073498,12874025),
+(1000 Lombard St, San Francisco, CA,94109,2085732023,5109912),
+(1990 California St, San Francisco, CA,94109,2097339728,1013023),
+(2220 Sacramento St, San Francisco, CA,94115,63196697,5496607),
+(6114 California St, San Francisco, CA,94121,15090939,1864990),
+(46958 Zapotec Dr, Fremont, CA,94539,25027676,1966569),
+(17110 Bodega Ln, Bodega, CA,94922,119688894,1498347),
+(223 N Oregon St, Yreka, CA,96097,15978013,486940),
+(420 E 11th Ave, Denver, CO,80203,82262709,2619701),
+(31 S Main St, East Windsor, CT,6088,57708197,74192),
+(77 Forest St, Hartford, CT,6105,59287335,176700),
+(5 Schoolhouse Crossing, Wethersfield, CT,6109,57789526,163692),
+(2A Hampton Rd, Pomfret Center, CT,6259,58117924,254755),
+(152 Lynn Dr, Monroe, CT,6468,58789904,504078),
+(208 Meriden Ave, Southington, CT,6489,60009341,268659),
+(216 Gunntown Rd, Naugatuck, CT,6770,111099308,344751),
+(93 Main St, Torrington, CT,6790,197791630,82805),
+(401f Street NW, Washington, DC,20001,398609,461593),
+(2201 North Capitol St NE, Washington, DC,20002,490240,741629),
+(1321 Pennsylvania Ave NW, Washington, DC,20004,408571,798648),
+(3400 Prospect St NW, Washington, DC,20007,88798043,9771641),
+(2020 Massachusetts Ave NW, Washington, DC,20036,124230849,2817094),
+(2600 M St NW, Washington, DC,20037,2093500245,1105806),
+(1600 Pennsylvania Ave NW, Washington, DC,20500,84074482,415923968),
+(1600 Pennsylvania Ave NW, Washington, DC,20500,84074482,415923968),
+(530 E Cape Shores Dr, Lewes, DE,19958,76305264,794633),
+(1320 N 14th St, Fernandina Beach, FL,32034,45938424,212554),
+(1307 N Beach St, Ormond Beach, FL,32174,47997831,229707),
+(1500 Winter Springs Blvd, Winter Springs, FL,32708,47657268,281359),
+(3592 Kayla Cir, Oviedo, FL,32765,47728499,261137),
+(401 Duval St, Key West, FL,33040,252179577,6035994),
+(534 Eaton St, Key West, FL,33040,2146535798,2776571),
+(403 Cleveland St, Clearwater, FL,33755,89745547,732491),
+(5700 Oakview Ln, Punta Gorda, FL,33950,43564398,237506),
+(5340 Jones Rd, St Cloud, FL,34771,46312049,444125),
+(992 Ridge Ave, Stone Mountain, GA,30083,14527852,232099),
+(416 Yorkhouse Rd, Rabun Gap, GA,30568,2143398896,1337571),
+(436 Greensboro Rd, Eatonton, GA,31024,245971812,1239715),
+(400 N Madison Ave, Eatonton, GA,31024,231075073,591764),
+(151 Main St, Irwinton, GA,31042,112002651,151281),
+(934 Georgia Ave, Macon, GA,31201,120156630,575629),
+(107 E Broughton St, Savannah, GA,31401,133711921,4091993),
+(14 E Oglethorpe Ave, Savannah, GA,31401,133706304,2968916),
+(429 Bull St, Savannah, GA,31401,14154487,2763563),
+(32 Abercorn St, Savannah, GA,31401,133713781,2515478),
+(123 Habersham St, Savannah, GA,31401,133710728,2358416),
+(102 W Hall St, Savannah, GA,31401,133711445,2277484),
+(21 W Bay St, Savannah, GA,31401,133707114,2047030),
+(225 E Bay St, Savannah, GA,31401,131743710,2038525),
+(234 Martin Luther King Jr Blvd, Savannah, GA,31401,131747211,1357321),
+(6 W Harris St, Savannah, GA,31401,133709220,1336155),
+(207 W York St, Savannah, GA,31401,2102064510,362672),
+(Greenwich Rd, Savannah, GA,31404,248655683,327002),
+(14 Jw Williams Ct, Jesup, GA,31545,105440186,260319),
+(508 E 2nd St, Villisca, IA,50864,127136745,22420),
+(1952 Warren Wagon Rd, McCall, ID,83638,233368524,2203142),
+(201 Spring St, Decatur, IL,62522,84812499,40583),
+(20th St, Grand Tower, IL,62942,251226757,12891),
+(3801 Madison Ave, Indianapolis, IN,46227,1167918,404069),
+(442 W 700 N, Valparaiso, IN,46385,81497179,200415),
+(302 E Beardsley Ave, Elkhart, IN,46514,138612207,126650),
+(206 W Turnpike St, Vevay, IN,47043,115592331,371252),
+(714 W Warren St, Mitchell, IN,47446,85550805,187919),
+(917 Mill St, Mt Vernon, IN,47620,85667144,263256),
+(503 N 2nd St, Atchison, KS,66002,122704190,467692),
+(508 N 2nd St, Atchison, KS,66002,233791447,66622),
+(935 Shawnee Rd, Kansas City, KS,66103,75692755,131555),
+(5325 Douglas Ave, Kansas City, KS,66106,75709299,196050),
+(1100 Fremont St, Manhattan, KS,66502,2113295739,144329),
+(SW 8th & SW Van Buren, Topeka, KS,66612,113180032,66866),
+(1433 Rd P, Emporia, KS,66801,228561571,200796),
+(90th St, Florence, KS,66851,235340696,218620),
+(702 Oak St, El Dorado, KS,67042,1320185,182592),
+(420 N Depot St, Cherryvale, KS,67335,77240326,115661),
+(2211 S Pope Lick Rd, Louisville, KY,40299,114102223,233906),
+(120 Sycamore Rd, Lexington, KY,40502,124044361,1893312),
+(201 N Mill St, Lexington, KY,40507,124045138,1059607),
+(370 N Broadway, Lexington, KY,40508,77510826,251821),
+(3970 Dixie Hwy, Dry Ridge, KY,41035,105818416,66965),
+(227 Sutton St, Maysville, KY,41056,234521678,137491),
+(1300 Winchester Ave, Ashland, KY,41101,105727855,88668),
+(16 Coral Hill-Halfway Rd, Glasgow, KY,42141,225204383,32197),
+(2390 Grapevine Rd, Madisonville, KY,42431,110367675,37482),
+(1580 Bethlehem Academy Rd, Cecilia, KY,42724,96934494,94553),
+(110 Frenier Rd, Laplace, LA,70068,106115981,157605),
+(621 Esplanade Ave, New Orleans, LA,70116,148976670,1351010),
+(1421 Bourbon St, New Orleans, LA,70116,73780994,746174),
+(700 Royal St, New Orleans, LA,70116,2130422789,674247),
+(833 Poland Ave, New Orleans, LA,70117,73795115,659664),
+(1725 St Roch Ave, New Orleans, LA,70117,84454465,357020),
+(519 Chretien Point Rd, Sunset, LA,70584,106135371,201998),
+(11910 Ellerbe Rd, Shreveport, LA,71115,248583379,1102188),
+(885 Washington Mountain Rd, Washington, MA,1223,2143810156,196903),
+(172 Church St, North Adams, MA,1247,2101742694,172513),
+(488 Brockelman Rd, Lancaster, MA,1523,57605491,157721),
+(16 Old Dudley Rd, Oxford, MA,1540,60027978,238143),
+(34 Eden Rd, Rockport, MA,1966,56959623,2459102),
+(22 Hardy St, Salem, MA,1970,56125282,624531),
+(356 Lafayette St, Salem, MA,1970,56123131,320417),
+(28 Howard St, Salem, MA,1970,62942898,274463),
+(310 Essex St, Salem, MA,1970,70599570,232130),
+(230 Playstead Rd, Medford, MA,2155,56274646,646432),
+(346 Pine St, Bridgewater, MA,2324,57153264,353211),
+(207 Sandwich St, Plymouth, MA,2360,246817681,585764),
+(2839 Main St, Barnstable, MA,2630,108612416,730455),
+(15 Breakwater Rd, Brewster, MA,2631,2129997044,2001755),
+(2019 Main St, Brewster, MA,2631,2135747878,819881),
+(12402 Quintette Ln, Bowie, MD,20720,37494529,500928),
+(9118 Brandywine Rd, Clinton, MD,20735,175943107,348571),
+(132 Old National Pike, Hagerstown, MD,21740,2118314896,227863),
+(115 Ivy Hill Dr, Middletown, MD,21769,36876943,467831),
+(30712 Michigan Ave, Westland, MI,48186,88759130,207692),
+(7095 107th Ave, South Haven, MI,49090,74602251,178115),
+(6282 143rd Ave, Holland, MI,49423,74588688,187228),
+(402 N Bridge St, Bellaire, MI,49615,106232277,665455),
+(2515 Tower Rd, Vanderbilt, MI,49795,106295516,143197),
+(502 Fisher St, Marquette, MI,49855,106476407,131428),
+(6940 Keats Ave S, Cottage Grove, MN,55016,2211196,1138978),
+(10 E Exchange St, St Paul, MN,55101,2091849485,121617),
+(1500 N Liberty St, Independence, MO,64050,2292277,1032036),
+(219 N Delaware St, Independence, MO,64050,2307144,355095),
+(3394 N Peace Church Ave, Joplin, MO,64801,125608505,109197),
+(1615 Grand Ave, Carthage, MO,64836,74904912,235780),
+(212 Springfield St, Reeds, MO,64859,125591131,68767),
+(1445 Harrison St, Vicksburg, MS,39180,78104213,292902),
+(2243 Waynesboro Shubuta Rd, Waynesboro, MS,39367,235512246,124320),
+(415 E Main St, Jamestown, NC,27282,55373643,2335534),
+(705 Gimghoul Rd, Chapel Hill, NC,27514,50038109,1816144),
+(307 Front St, Beaufort, NC,28516,102095687,881127),
+(511 Broad St, New Bern, NC,28560,240153791,261712),
+(341 Split Rock Rd, Boonton, NJ,7005,39497457,355783),
+(178 Clinton Rd, West Caldwell, NJ,7006,38741319,454788),
+(131 Mountain Rd, Basking Ridge, NJ,7920,39843951,690300),
+(500 W Collings Ave, Collingswood, NJ,8107,38287907,280299),
+(57 N Shore Rd, Absecon, NJ,8201,114467686,269560),
+(720 Washington St, Cape May, NJ,8204,121944221,1086906),
+(200 Congress Pl, Cape May, NJ,8204,38335336,1024195),
+(1301 Beach Ave, Cape May, NJ,8204,2146386162,617427),
+(915 E Moss Mill Rd, Absecon, NJ,8205,37808395,132397),
+(217 4th St, Fieldsboro, NJ,8505,38104964,169064),
+(56 Main St, Clinton, NJ,8809,38834605,430846),
+(76 Main St, Flemington, NJ,8822,38841585,284287),
+(423 Central Ave NW, Albuquerque, NM,87102,183435817,410688),
+(Penitentiary Rd, Santa Fe, NM,87508,295822508,1536858),
+(33 Black Canyon Rd, Santa Fe, NM,87508,102022691,591909),
+(14 W 34th St, New York, NY,10001,2119087355,1709622),
+(29 E 4th St, New York, NY,10003,30671177,1608421),
+(14 W 10th St, New York, NY,10011,2105449928,636000),
+(1 W 72nd St, New York, NY,10023,244750263,2124702),
+(1 Laveta Pl, Nyack, NY,10960,32384985,1834979),
+(108 Ocean Ave, Amityville, NY,11701,32596605,663853),
+(135 W Gate Dr, Huntington, NY,11743,59580960,6346518),
+(228 Grove Ave, Patchogue, NY,11772,59544501,264316),
+(1568 Clauverwie Rd, Middleburgh, NY,12122,84109088,217424),
+(4 Van Wyck Ln, Wappingers Falls, NY,12590,30096905,437149),
+(12 Pells Ct, Poughkeepsie, NY,12601,30108398,153211),
+(609 Craigie Clair Rd, Roscoe, NY,12776,32780862,354512),
+(302 Main St, Oneida, NY,13421,30824368,193982),
+(4700 W Main St, Fredonia, NY,14063,29922290,140353),
+(313 W 5th Ave, Columbus, OH,43201,33827874,686106),
+(2678 County Line Rd, Madison, OH,44057,203277827,192575),
+(3792 S Raccoon Rd, Canfield, OH,44406,34835744,134027),
+(6900 Maud Hughes Rd, Liberty Township, OH,45011,33163611,158233),
+(1241 Elm St, Cincinnati, OH,45202,2082287841,529631),
+(101 Front St, Marietta, OH,45750,75127551,138196),
+(1141 Pawnee Bill Rd, Pawnee, OK,74058,86095183,76669),
+(28648 SW Paris Ave, Wilsonville, OR,97070,246334578,340194),
+(707 SE 12th Ave, Portland, OR,97214,176564314,626266),
+(100 Front St, Wolf Creek, OR,97497,213060135,306630),
+(1250 Siskiyou Blvd, Ashland, OR,97520,48364735,365002),
+(20000 Caves Hwy, Cave Junction, OR,97523,213090677,176579),
+(201 Main St, Klamath Falls, OR,97601,75160402,42607),
+(1459 N Main St, Granite, OR,97877,194171110,81644),
+(284 Nutmeg Rd, Saxton, PA,16678,241425775,314831),
+(15 W Main St, Fairfield, PA,17320,2138624315,662808),
+(912 Baltimore Pike, Gettysburg, PA,17325,213029265,137271),
+(1217 Marion St, Dunmore, PA,18509,9559446,133871),
+(10 W Ferry St, New Hope, PA,18938,2098952216,1203660),
+(6300 Hardin Rd, Bensalem, PA,19020,8947572,303473),
+(321 S 4th St, Philadelphia, PA,19106,10195967,662862),
+(138 S 2nd St, Philadelphia, PA,19106,2140403040,436974),
+(111 W Mermaid Ln, Philadelphia, PA,19118,10214535,1286205),
+(501 W Allens Ln, Philadelphia, PA,19119,10214393,815682),
+(Pine St & 3rd St, Philadelphia, PA,19147,63498000,293909),
+(1260 Thornbury Rd, West Chester, PA,19382,67347507,857070),
+(1677 Round Top Rd, Burrillville, RI,2830,65889297,452385),
+(191 Cedar Springs Rd, Spartanburg, SC,29302,11831319,482876),
+(117 Wilson Rd, Union, SC,29379,120417637,263297),
+(20 S Battery, Charleston, SC,29401,2116149683,3458587),
+(135 Church St, Charleston, SC,29401,2088807331,1208237),
+(114 Rutledge Ave, Charleston, SC,29401,2138054534,533270),
+(4 Archdale St, Charleston, SC,29401,2084332934,523235),
+(15 Cannon St, Georgetown, SC,29440,10981896,554516),
+(921 Prince St, Georgetown, SC,29440,10981531,532967),
+(3083 Charleston Hwy, Aiken, SC,29801,52162277,522158),
+(1377 Gregg Hwy, Graniteville, SC,29829,303790676,150898),
+(411 Craven St, Beaufort, SC,29902,68767019,2448231),
+(501 King St, Beaufort, SC,29902,68766950,1520692),
+(Center Ave, Garretson, SD,57030,201339552,130200),
+(1210 2nd Ave NW, Aberdeen, SD,57401,299354631,150171),
+(107 W M.L.K. Blvd, Chattanooga, TN,37402,247379854,308407),
+(1311 Flanders Ln, Maryville, TN,37803,81021856,246948),
+(680 Adams Ave, Memphis, TN,38105,82697828,1508263),
+(510 Olen St, Wichita Falls, TX,76301,304077302,27138),
+(211 N Pleasant St, Hillsboro, TX,76645,87330704,145365),
+(12654 Woman Hollering Rd, Schertz, TX,78154,26183617,458417),
+(12538 Woman Hollering Rd, Schertz, TX,78154,102500056,389179),
+(638 Fort Concho, San Antonio, TX,78245,124855510,244532),
+(302 W 24th St, Austin, TX,78712,29394173,258033),
+(149 Split Rail Ln, Smithville, TX,78957,84385975,356983),
+(20850 Oatlands Plantation Ln, Leesburg, VA,20175,110692187,2305080),
+(20850 Oatlands Plantation Ln, Leesburg, VA,20175,110692187,2305080),
+(5914 Monticello Rd, Alexandria, VA,22303,51925939,436299),
+(Haw Branch Ln, Amelia Court House, VA,23002,250672391,199114),
+(4800 John Tyler Memorial Hwy, Charles City, VA,23030,79072329,561367),
+(201 High St, Farmville, VA,23901,117460000,173983),
+(459 Thomas Bridge Rd, Marion, VA,24354,113824103,104888),
+(103 Valley Center Dr, Staunton, VA,24401,249827350,749707),
+(531 Thornrose Ave, Staunton, VA,24401,249827477,493130),
+(744 Clay St, Port Townsend, WA,98368,226734768,949457),
+(651 Cleveland St, Port Townsend, WA,98368,2108950227,450590),
+(1201 Main Rd, Washington, WI,54246,104958675,372627),
+(N3754 1000th St, Eau Claire, WI,54703,104968311,126851) [42000-199]
+2019-12-04 18:54:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE PROPERTIES
+(
+ADDRESS,
+CITY,
+STATE,
+ZIPCODE,
+ZPID,
+ZESTIMATE
+)
+VALUES[*]
+(95 HECK ST, LYNN, AL,35575,121023548,49441),
+(1552 MONTEREY PL, MOBILE, AL,36604,51015139,403236),
+(619 OUACHITA 65, CAMDEN, AR,71701,76220157,155609),
+(1175 LAFAYETTE 9, BRADLEY, AR,71826,239466433,42992),
+(1001 UNION ST, JONESBORO, AR,72401,90770794,292109),
+(312 S REEVES ST, MONETTE, AR,72447,112607897,108888),
+(3901 W PIONEER RD, PHOENIX, AZ,85086,2114321265,409394),
+(26 SOWLES AVE, BISBEE, AZ,85603,7390125,232346),
+(113 E SAFFORD ST, TOMBSTONE, AZ,85638,7408030,214058),
+(2000 SLAUGHTER HOUSE CANYON RD, KINGMAN, AZ,86401,191822403,200011),
+(5121 FRANKLIN AVE, LOS ANGELES, CA,90027,20809687,4878561),
+(2475 GLENDOWER PL, LOS ANGELES, CA,90027,20809000,3396227),
+(421 N AVE 19, LOS ANGELES, CA,90031,20741187,965709),
+(2400 LAUREL CANYON BLVD, LOS ANGELES, CA,90046,145643454,2492304),
+(8763 WONDERLAND AVE, LOS ANGELES, CA,90046,20800819,849317),
+(8433 SUNSET BLVD, LOS ANGELES, CA,90069,20797301,1608558),
+(1005 N REXFORD DR, BEVERLY HILLS, CA,90210,20522563,19650442),
+(11547 BRADDOCK DR, CULVER CITY, CA,90230,20438974,1092974),
+(480 FOURTH AVE, SAN DIEGO, CA,92101,80620352,422675),
+(1500 ORANGE AVE, CORONADO, CA,92118,2094761925,2379699),
+(2541 PASO ROBLES ST, OCEANO, CA,93445,15437264,598674),
+(2090 JACKSON ST, SAN FRANCISCO, CA,94109,15073498,12874025),
+(1000 LOMBARD ST, SAN FRANCISCO, CA,94109,2085732023,5109912),
+(1990 CALIFORNIA ST, SAN FRANCISCO, CA,94109,2097339728,1013023),
+(2220 SACRAMENTO ST, SAN FRANCISCO, CA,94115,63196697,5496607),
+(6114 CALIFORNIA ST, SAN FRANCISCO, CA,94121,15090939,1864990),
+(46958 ZAPOTEC DR, FREMONT, CA,94539,25027676,1966569),
+(17110 BODEGA LN, BODEGA, CA,94922,119688894,1498347),
+(223 N OREGON ST, YREKA, CA,96097,15978013,486940),
+(420 E 11TH AVE, DENVER, CO,80203,82262709,2619701),
+(31 S MAIN ST, EAST WINDSOR, CT,6088,57708197,74192),
+(77 FOREST ST, HARTFORD, CT,6105,59287335,176700),
+(5 SCHOOLHOUSE CROSSING, WETHERSFIELD, CT,6109,57789526,163692),
+(2A HAMPTON RD, POMFRET CENTER, CT,6259,58117924,254755),
+(152 LYNN DR, MONROE, CT,6468,58789904,504078),
+(208 MERIDEN AVE, SOUTHINGTON, CT,6489,60009341,268659),
+(216 GUNNTOWN RD, NAUGATUCK, CT,6770,111099308,344751),
+(93 MAIN ST, TORRINGTON, CT,6790,197791630,82805),
+(401F STREET NW, WASHINGTON, DC,20001,398609,461593),
+(2201 NORTH CAPITOL ST NE, WASHINGTON, DC,20002,490240,741629),
+(1321 PENNSYLVANIA AVE NW, WASHINGTON, DC,20004,408571,798648),
+(3400 PROSPECT ST NW, WASHINGTON, DC,20007,88798043,9771641),
+(2020 MASSACHUSETTS AVE NW, WASHINGTON, DC,20036,124230849,2817094),
+(2600 M ST NW, WASHINGTON, DC,20037,2093500245,1105806),
+(1600 PENNSYLVANIA AVE NW, WASHINGTON, DC,20500,84074482,415923968),
+(1600 PENNSYLVANIA AVE NW, WASHINGTON, DC,20500,84074482,415923968),
+(530 E CAPE SHORES DR, LEWES, DE,19958,76305264,794633),
+(1320 N 14TH ST, FERNANDINA BEACH, FL,32034,45938424,212554),
+(1307 N BEACH ST, ORMOND BEACH, FL,32174,47997831,229707),
+(1500 WINTER SPRINGS BLVD, WINTER SPRINGS, FL,32708,47657268,281359),
+(3592 KAYLA CIR, OVIEDO, FL,32765,47728499,261137),
+(401 DUVAL ST, KEY WEST, FL,33040,252179577,6035994),
+(534 EATON ST, KEY WEST, FL,33040,2146535798,2776571),
+(403 CLEVELAND ST, CLEARWATER, FL,33755,89745547,732491),
+(5700 OAKVIEW LN, PUNTA GORDA, FL,33950,43564398,237506),
+(5340 JONES RD, ST CLOUD, FL,34771,46312049,444125),
+(992 RIDGE AVE, STONE MOUNTAIN, GA,30083,14527852,232099),
+(416 YORKHOUSE RD, RABUN GAP, GA,30568,2143398896,1337571),
+(436 GREENSBORO RD, EATONTON, GA,31024,245971812,1239715),
+(400 N MADISON AVE, EATONTON, GA,31024,231075073,591764),
+(151 MAIN ST, IRWINTON, GA,31042,112002651,151281),
+(934 GEORGIA AVE, MACON, GA,31201,120156630,575629),
+(107 E BROUGHTON ST, SAVANNAH, GA,31401,133711921,4091993),
+(14 E OGLETHORPE AVE, SAVANNAH, GA,31401,133706304,2968916),
+(429 BULL ST, SAVANNAH, GA,31401,14154487,2763563),
+(32 ABERCORN ST, SAVANNAH, GA,31401,133713781,2515478),
+(123 HABERSHAM ST, SAVANNAH, GA,31401,133710728,2358416),
+(102 W HALL ST, SAVANNAH, GA,31401,133711445,2277484),
+(21 W BAY ST, SAVANNAH, GA,31401,133707114,2047030),
+(225 E BAY ST, SAVANNAH, GA,31401,131743710,2038525),
+(234 MARTIN LUTHER KING JR BLVD, SAVANNAH, GA,31401,131747211,1357321),
+(6 W HARRIS ST, SAVANNAH, GA,31401,133709220,1336155),
+(207 W YORK ST, SAVANNAH, GA,31401,2102064510,362672),
+(GREENWICH RD, SAVANNAH, GA,31404,248655683,327002),
+(14 JW WILLIAMS CT, JESUP, GA,31545,105440186,260319),
+(508 E 2ND ST, VILLISCA, IA,50864,127136745,22420),
+(1952 WARREN WAGON RD, MCCALL, ID,83638,233368524,2203142),
+(201 SPRING ST, DECATUR, IL,62522,84812499,40583),
+(20TH ST, GRAND TOWER, IL,62942,251226757,12891),
+(3801 MADISON AVE, INDIANAPOLIS, IN,46227,1167918,404069),
+(442 W 700 N, VALPARAISO, IN,46385,81497179,200415),
+(302 E BEARDSLEY AVE, ELKHART, IN,46514,138612207,126650),
+(206 W TURNPIKE ST, VEVAY, IN,47043,115592331,371252),
+(714 W WARREN ST, MITCHELL, IN,47446,85550805,187919),
+(917 MILL ST, MT VERNON, IN,47620,85667144,263256),
+(503 N 2ND ST, ATCHISON, KS,66002,122704190,467692),
+(508 N 2ND ST, ATCHISON, KS,66002,233791447,66622),
+(935 SHAWNEE RD, KANSAS CITY, KS,66103,75692755,131555),
+(5325 DOUGLAS AVE, KANSAS CITY, KS,66106,75709299,196050),
+(1100 FREMONT ST, MANHATTAN, KS,66502,2113295739,144329),
+(SW 8TH & SW VAN BUREN, TOPEKA, KS,66612,113180032,66866),
+(1433 RD P, EMPORIA, KS,66801,228561571,200796),
+(90TH ST, FLORENCE, KS,66851,235340696,218620),
+(702 OAK ST, EL DORADO, KS,67042,1320185,182592),
+(420 N DEPOT ST, CHERRYVALE, KS,67335,77240326,115661),
+(2211 S POPE LICK RD, LOUISVILLE, KY,40299,114102223,233906),
+(120 SYCAMORE RD, LEXINGTON, KY,40502,124044361,1893312),
+(201 N MILL ST, LEXINGTON, KY,40507,124045138,1059607),
+(370 N BROADWAY, LEXINGTON, KY,40508,77510826,251821),
+(3970 DIXIE HWY, DRY RIDGE, KY,41035,105818416,66965),
+(227 SUTTON ST, MAYSVILLE, KY,41056,234521678,137491),
+(1300 WINCHESTER AVE, ASHLAND, KY,41101,105727855,88668),
+(16 CORAL HILL-HALFWAY RD, GLASGOW, KY,42141,225204383,32197),
+(2390 GRAPEVINE RD, MADISONVILLE, KY,42431,110367675,37482),
+(1580 BETHLEHEM ACADEMY RD, CECILIA, KY,42724,96934494,94553),
+(110 FRENIER RD, LAPLACE, LA,70068,106115981,157605),
+(621 ESPLANADE AVE, NEW ORLEANS, LA,70116,148976670,1351010),
+(1421 BOURBON ST, NEW ORLEANS, LA,70116,73780994,746174),
+(700 ROYAL ST, NEW ORLEANS, LA,70116,2130422789,674247),
+(833 POLAND AVE, NEW ORLEANS, LA,70117,73795115,659664),
+(1725 ST ROCH AVE, NEW ORLEANS, LA,70117,84454465,357020),
+(519 CHRETIEN POINT RD, SUNSET, LA,70584,106135371,201998),
+(11910 ELLERBE RD, SHREVEPORT, LA,71115,248583379,1102188),
+(885 WASHINGTON MOUNTAIN RD, WASHINGTON, MA,1223,2143810156,196903),
+(172 CHURCH ST, NORTH ADAMS, MA,1247,2101742694,172513),
+(488 BROCKELMAN RD, LANCASTER, MA,1523,57605491,157721),
+(16 OLD DUDLEY RD, OXFORD, MA,1540,60027978,238143),
+(34 EDEN RD, ROCKPORT, MA,1966,56959623,2459102),
+(22 HARDY ST, SALEM, MA,1970,56125282,624531),
+(356 LAFAYETTE ST, SALEM, MA,1970,56123131,320417),
+(28 HOWARD ST, SALEM, MA,1970,62942898,274463),
+(310 ESSEX ST, SALEM, MA,1970,70599570,232130),
+(230 PLAYSTEAD RD, MEDFORD, MA,2155,56274646,646432),
+(346 PINE ST, BRIDGEWATER, MA,2324,57153264,353211),
+(207 SANDWICH ST, PLYMOUTH, MA,2360,246817681,585764),
+(2839 MAIN ST, BARNSTABLE, MA,2630,108612416,730455),
+(15 BREAKWATER RD, BREWSTER, MA,2631,2129997044,2001755),
+(2019 MAIN ST, BREWSTER, MA,2631,2135747878,819881),
+(12402 QUINTETTE LN, BOWIE, MD,20720,37494529,500928),
+(9118 BRANDYWINE RD, CLINTON, MD,20735,175943107,348571),
+(132 OLD NATIONAL PIKE, HAGERSTOWN, MD,21740,2118314896,227863),
+(115 IVY HILL DR, MIDDLETOWN, MD,21769,36876943,467831),
+(30712 MICHIGAN AVE, WESTLAND, MI,48186,88759130,207692),
+(7095 107TH AVE, SOUTH HAVEN, MI,49090,74602251,178115),
+(6282 143RD AVE, HOLLAND, MI,49423,74588688,187228),
+(402 N BRIDGE ST, BELLAIRE, MI,49615,106232277,665455),
+(2515 TOWER RD, VANDERBILT, MI,49795,106295516,143197),
+(502 FISHER ST, MARQUETTE, MI,49855,106476407,131428),
+(6940 KEATS AVE S, COTTAGE GROVE, MN,55016,2211196,1138978),
+(10 E EXCHANGE ST, ST PAUL, MN,55101,2091849485,121617),
+(1500 N LIBERTY ST, INDEPENDENCE, MO,64050,2292277,1032036),
+(219 N DELAWARE ST, INDEPENDENCE, MO,64050,2307144,355095),
+(3394 N PEACE CHURCH AVE, JOPLIN, MO,64801,125608505,109197),
+(1615 GRAND AVE, CARTHAGE, MO,64836,74904912,235780),
+(212 SPRINGFIELD ST, REEDS, MO,64859,125591131,68767),
+(1445 HARRISON ST, VICKSBURG, MS,39180,78104213,292902),
+(2243 WAYNESBORO SHUBUTA RD, WAYNESBORO, MS,39367,235512246,124320),
+(415 E MAIN ST, JAMESTOWN, NC,27282,55373643,2335534),
+(705 GIMGHOUL RD, CHAPEL HILL, NC,27514,50038109,1816144),
+(307 FRONT ST, BEAUFORT, NC,28516,102095687,881127),
+(511 BROAD ST, NEW BERN, NC,28560,240153791,261712),
+(341 SPLIT ROCK RD, BOONTON, NJ,7005,39497457,355783),
+(178 CLINTON RD, WEST CALDWELL, NJ,7006,38741319,454788),
+(131 MOUNTAIN RD, BASKING RIDGE, NJ,7920,39843951,690300),
+(500 W COLLINGS AVE, COLLINGSWOOD, NJ,8107,38287907,280299),
+(57 N SHORE RD, ABSECON, NJ,8201,114467686,269560),
+(720 WASHINGTON ST, CAPE MAY, NJ,8204,121944221,1086906),
+(200 CONGRESS PL, CAPE MAY, NJ,8204,38335336,1024195),
+(1301 BEACH AVE, CAPE MAY, NJ,8204,2146386162,617427),
+(915 E MOSS MILL RD, ABSECON, NJ,8205,37808395,132397),
+(217 4TH ST, FIELDSBORO, NJ,8505,38104964,169064),
+(56 MAIN ST, CLINTON, NJ,8809,38834605,430846),
+(76 MAIN ST, FLEMINGTON, NJ,8822,38841585,284287),
+(423 CENTRAL AVE NW, ALBUQUERQUE, NM,87102,183435817,410688),
+(PENITENTIARY RD, SANTA FE, NM,87508,295822508,1536858),
+(33 BLACK CANYON RD, SANTA FE, NM,87508,102022691,591909),
+(14 W 34TH ST, NEW YORK, NY,10001,2119087355,1709622),
+(29 E 4TH ST, NEW YORK, NY,10003,30671177,1608421),
+(14 W 10TH ST, NEW YORK, NY,10011,2105449928,636000),
+(1 W 72ND ST, NEW YORK, NY,10023,244750263,2124702),
+(1 LAVETA PL, NYACK, NY,10960,32384985,1834979),
+(108 OCEAN AVE, AMITYVILLE, NY,11701,32596605,663853),
+(135 W GATE DR, HUNTINGTON, NY,11743,59580960,6346518),
+(228 GROVE AVE, PATCHOGUE, NY,11772,59544501,264316),
+(1568 CLAUVERWIE RD, MIDDLEBURGH, NY,12122,84109088,217424),
+(4 VAN WYCK LN, WAPPINGERS FALLS, NY,12590,30096905,437149),
+(12 PELLS CT, POUGHKEEPSIE, NY,12601,30108398,153211),
+(609 CRAIGIE CLAIR RD, ROSCOE, NY,12776,32780862,354512),
+(302 MAIN ST, ONEIDA, NY,13421,30824368,193982),
+(4700 W MAIN ST, FREDONIA, NY,14063,29922290,140353),
+(313 W 5TH AVE, COLUMBUS, OH,43201,33827874,686106),
+(2678 COUNTY LINE RD, MADISON, OH,44057,203277827,192575),
+(3792 S RACCOON RD, CANFIELD, OH,44406,34835744,134027),
+(6900 MAUD HUGHES RD, LIBERTY TOWNSHIP, OH,45011,33163611,158233),
+(1241 ELM ST, CINCINNATI, OH,45202,2082287841,529631),
+(101 FRONT ST, MARIETTA, OH,45750,75127551,138196),
+(1141 PAWNEE BILL RD, PAWNEE, OK,74058,86095183,76669),
+(28648 SW PARIS AVE, WILSONVILLE, OR,97070,246334578,340194),
+(707 SE 12TH AVE, PORTLAND, OR,97214,176564314,626266),
+(100 FRONT ST, WOLF CREEK, OR,97497,213060135,306630),
+(1250 SISKIYOU BLVD, ASHLAND, OR,97520,48364735,365002),
+(20000 CAVES HWY, CAVE JUNCTION, OR,97523,213090677,176579),
+(201 MAIN ST, KLAMATH FALLS, OR,97601,75160402,42607),
+(1459 N MAIN ST, GRANITE, OR,97877,194171110,81644),
+(284 NUTMEG RD, SAXTON, PA,16678,241425775,314831),
+(15 W MAIN ST, FAIRFIELD, PA,17320,2138624315,662808),
+(912 BALTIMORE PIKE, GETTYSBURG, PA,17325,213029265,137271),
+(1217 MARION ST, DUNMORE, PA,18509,9559446,133871),
+(10 W FERRY ST, NEW HOPE, PA,18938,2098952216,1203660),
+(6300 HARDIN RD, BENSALEM, PA,19020,8947572,303473),
+(321 S 4TH ST, PHILADELPHIA, PA,19106,10195967,662862),
+(138 S 2ND ST, PHILADELPHIA, PA,19106,2140403040,436974),
+(111 W MERMAID LN, PHILADELPHIA, PA,19118,10214535,1286205),
+(501 W ALLENS LN, PHILADELPHIA, PA,19119,10214393,815682),
+(PINE ST & 3RD ST, PHILADELPHIA, PA,19147,63498000,293909),
+(1260 THORNBURY RD, WEST CHESTER, PA,19382,67347507,857070),
+(1677 ROUND TOP RD, BURRILLVILLE, RI,2830,65889297,452385),
+(191 CEDAR SPRINGS RD, SPARTANBURG, SC,29302,11831319,482876),
+(117 WILSON RD, UNION, SC,29379,120417637,263297),
+(20 S BATTERY, CHARLESTON, SC,29401,2116149683,3458587),
+(135 CHURCH ST, CHARLESTON, SC,29401,2088807331,1208237),
+(114 RUTLEDGE AVE, CHARLESTON, SC,29401,2138054534,533270),
+(4 ARCHDALE ST, CHARLESTON, SC,29401,2084332934,523235),
+(15 CANNON ST, GEORGETOWN, SC,29440,10981896,554516),
+(921 PRINCE ST, GEORGETOWN, SC,29440,10981531,532967),
+(3083 CHARLESTON HWY, AIKEN, SC,29801,52162277,522158),
+(1377 GREGG HWY, GRANITEVILLE, SC,29829,303790676,150898),
+(411 CRAVEN ST, BEAUFORT, SC,29902,68767019,2448231),
+(501 KING ST, BEAUFORT, SC,29902,68766950,1520692),
+(CENTER AVE, GARRETSON, SD,57030,201339552,130200),
+(1210 2ND AVE NW, ABERDEEN, SD,57401,299354631,150171),
+(107 W M.L.K. BLVD, CHATTANOOGA, TN,37402,247379854,308407),
+(1311 FLANDERS LN, MARYVILLE, TN,37803,81021856,246948),
+(680 ADAMS AVE, MEMPHIS, TN,38105,82697828,1508263),
+(510 OLEN ST, WICHITA FALLS, TX,76301,304077302,27138),
+(211 N PLEASANT ST, HILLSBORO, TX,76645,87330704,145365),
+(12654 WOMAN HOLLERING RD, SCHERTZ, TX,78154,26183617,458417),
+(12538 WOMAN HOLLERING RD, SCHERTZ, TX,78154,102500056,389179),
+(638 FORT CONCHO, SAN ANTONIO, TX,78245,124855510,244532),
+(302 W 24TH ST, AUSTIN, TX,78712,29394173,258033),
+(149 SPLIT RAIL LN, SMITHVILLE, TX,78957,84385975,356983),
+(20850 OATLANDS PLANTATION LN, LEESBURG, VA,20175,110692187,2305080),
+(20850 OATLANDS PLANTATION LN, LEESBURG, VA,20175,110692187,2305080),
+(5914 MONTICELLO RD, ALEXANDRIA, VA,22303,51925939,436299),
+(HAW BRANCH LN, AMELIA COURT HOUSE, VA,23002,250672391,199114),
+(4800 JOHN TYLER MEMORIAL HWY, CHARLES CITY, VA,23030,79072329,561367),
+(201 HIGH ST, FARMVILLE, VA,23901,117460000,173983),
+(459 THOMAS BRIDGE RD, MARION, VA,24354,113824103,104888),
+(103 VALLEY CENTER DR, STAUNTON, VA,24401,249827350,749707),
+(531 THORNROSE AVE, STAUNTON, VA,24401,249827477,493130),
+(744 CLAY ST, PORT TOWNSEND, WA,98368,226734768,949457),
+(651 CLEVELAND ST, PORT TOWNSEND, WA,98368,2108950227,450590),
+(1201 MAIN RD, WASHINGTON, WI,54246,104958675,372627),
+(N3754 1000TH ST, EAU CLAIRE, WI,54703,104968311,126851) "; SQL statement:
+CREATE TABLE PROPERTIES
+(
+Address,
+City,
+State,
+ZipCode,
+ZPID,
+Zestimate
+)
+Values
+(95 Heck St, Lynn, AL,35575,121023548,49441),
+(1552 Monterey Pl, Mobile, AL,36604,51015139,403236),
+(619 Ouachita 65, Camden, AR,71701,76220157,155609),
+(1175 Lafayette 9, Bradley, AR,71826,239466433,42992),
+(1001 Union St, Jonesboro, AR,72401,90770794,292109),
+(312 S Reeves St, Monette, AR,72447,112607897,108888),
+(3901 W Pioneer Rd, Phoenix, AZ,85086,2114321265,409394),
+(26 Sowles Ave, Bisbee, AZ,85603,7390125,232346),
+(113 E Safford St, Tombstone, AZ,85638,7408030,214058),
+(2000 Slaughter House Canyon Rd, Kingman, AZ,86401,191822403,200011),
+(5121 Franklin Ave, Los Angeles, CA,90027,20809687,4878561),
+(2475 Glendower Pl, Los Angeles, CA,90027,20809000,3396227),
+(421 N Ave 19, Los Angeles, CA,90031,20741187,965709),
+(2400 Laurel Canyon Blvd, Los Angeles, CA,90046,145643454,2492304),
+(8763 Wonderland Ave, Los Angeles, CA,90046,20800819,849317),
+(8433 Sunset Blvd, Los Angeles, CA,90069,20797301,1608558),
+(1005 N Rexford Dr, Beverly Hills, CA,90210,20522563,19650442),
+(11547 Braddock Dr, Culver City, CA,90230,20438974,1092974),
+(480 Fourth Ave, San Diego, CA,92101,80620352,422675),
+(1500 Orange Ave, Coronado, CA,92118,2094761925,2379699),
+(2541 Paso Robles St, Oceano, CA,93445,15437264,598674),
+(2090 Jackson St, San Francisco, CA,94109,15073498,12874025),
+(1000 Lombard St, San Francisco, CA,94109,2085732023,5109912),
+(1990 California St, San Francisco, CA,94109,2097339728,1013023),
+(2220 Sacramento St, San Francisco, CA,94115,63196697,5496607),
+(6114 California St, San Francisco, CA,94121,15090939,1864990),
+(46958 Zapotec Dr, Fremont, CA,94539,25027676,1966569),
+(17110 Bodega Ln, Bodega, CA,94922,119688894,1498347),
+(223 N Oregon St, Yreka, CA,96097,15978013,486940),
+(420 E 11th Ave, Denver, CO,80203,82262709,2619701),
+(31 S Main St, East Windsor, CT,6088,57708197,74192),
+(77 Forest St, Hartford, CT,6105,59287335,176700),
+(5 Schoolhouse Crossing, Wethersfield, CT,6109,57789526,163692),
+(2A Hampton Rd, Pomfret Center, CT,6259,58117924,254755),
+(152 Lynn Dr, Monroe, CT,6468,58789904,504078),
+(208 Meriden Ave, Southington, CT,6489,60009341,268659),
+(216 Gunntown Rd, Naugatuck, CT,6770,111099308,344751),
+(93 Main St, Torrington, CT,6790,197791630,82805),
+(401f Street NW, Washington, DC,20001,398609,461593),
+(2201 North Capitol St NE, Washington, DC,20002,490240,741629),
+(1321 Pennsylvania Ave NW, Washington, DC,20004,408571,798648),
+(3400 Prospect St NW, Washington, DC,20007,88798043,9771641),
+(2020 Massachusetts Ave NW, Washington, DC,20036,124230849,2817094),
+(2600 M St NW, Washington, DC,20037,2093500245,1105806),
+(1600 Pennsylvania Ave NW, Washington, DC,20500,84074482,415923968),
+(1600 Pennsylvania Ave NW, Washington, DC,20500,84074482,415923968),
+(530 E Cape Shores Dr, Lewes, DE,19958,76305264,794633),
+(1320 N 14th St, Fernandina Beach, FL,32034,45938424,212554),
+(1307 N Beach St, Ormond Beach, FL,32174,47997831,229707),
+(1500 Winter Springs Blvd, Winter Springs, FL,32708,47657268,281359),
+(3592 Kayla Cir, Oviedo, FL,32765,47728499,261137),
+(401 Duval St, Key West, FL,33040,252179577,6035994),
+(534 Eaton St, Key West, FL,33040,2146535798,2776571),
+(403 Cleveland St, Clearwater, FL,33755,89745547,732491),
+(5700 Oakview Ln, Punta Gorda, FL,33950,43564398,237506),
+(5340 Jones Rd, St Cloud, FL,34771,46312049,444125),
+(992 Ridge Ave, Stone Mountain, GA,30083,14527852,232099),
+(416 Yorkhouse Rd, Rabun Gap, GA,30568,2143398896,1337571),
+(436 Greensboro Rd, Eatonton, GA,31024,245971812,1239715),
+(400 N Madison Ave, Eatonton, GA,31024,231075073,591764),
+(151 Main St, Irwinton, GA,31042,112002651,151281),
+(934 Georgia Ave, Macon, GA,31201,120156630,575629),
+(107 E Broughton St, Savannah, GA,31401,133711921,4091993),
+(14 E Oglethorpe Ave, Savannah, GA,31401,133706304,2968916),
+(429 Bull St, Savannah, GA,31401,14154487,2763563),
+(32 Abercorn St, Savannah, GA,31401,133713781,2515478),
+(123 Habersham St, Savannah, GA,31401,133710728,2358416),
+(102 W Hall St, Savannah, GA,31401,133711445,2277484),
+(21 W Bay St, Savannah, GA,31401,133707114,2047030),
+(225 E Bay St, Savannah, GA,31401,131743710,2038525),
+(234 Martin Luther King Jr Blvd, Savannah, GA,31401,131747211,1357321),
+(6 W Harris St, Savannah, GA,31401,133709220,1336155),
+(207 W York St, Savannah, GA,31401,2102064510,362672),
+(Greenwich Rd, Savannah, GA,31404,248655683,327002),
+(14 Jw Williams Ct, Jesup, GA,31545,105440186,260319),
+(508 E 2nd St, Villisca, IA,50864,127136745,22420),
+(1952 Warren Wagon Rd, McCall, ID,83638,233368524,2203142),
+(201 Spring St, Decatur, IL,62522,84812499,40583),
+(20th St, Grand Tower, IL,62942,251226757,12891),
+(3801 Madison Ave, Indianapolis, IN,46227,1167918,404069),
+(442 W 700 N, Valparaiso, IN,46385,81497179,200415),
+(302 E Beardsley Ave, Elkhart, IN,46514,138612207,126650),
+(206 W Turnpike St, Vevay, IN,47043,115592331,371252),
+(714 W Warren St, Mitchell, IN,47446,85550805,187919),
+(917 Mill St, Mt Vernon, IN,47620,85667144,263256),
+(503 N 2nd St, Atchison, KS,66002,122704190,467692),
+(508 N 2nd St, Atchison, KS,66002,233791447,66622),
+(935 Shawnee Rd, Kansas City, KS,66103,75692755,131555),
+(5325 Douglas Ave, Kansas City, KS,66106,75709299,196050),
+(1100 Fremont St, Manhattan, KS,66502,2113295739,144329),
+(SW 8th & SW Van Buren, Topeka, KS,66612,113180032,66866),
+(1433 Rd P, Emporia, KS,66801,228561571,200796),
+(90th St, Florence, KS,66851,235340696,218620),
+(702 Oak St, El Dorado, KS,67042,1320185,182592),
+(420 N Depot St, Cherryvale, KS,67335,77240326,115661),
+(2211 S Pope Lick Rd, Louisville, KY,40299,114102223,233906),
+(120 Sycamore Rd, Lexington, KY,40502,124044361,1893312),
+(201 N Mill St, Lexington, KY,40507,124045138,1059607),
+(370 N Broadway, Lexington, KY,40508,77510826,251821),
+(3970 Dixie Hwy, Dry Ridge, KY,41035,105818416,66965),
+(227 Sutton St, Maysville, KY,41056,234521678,137491),
+(1300 Winchester Ave, Ashland, KY,41101,105727855,88668),
+(16 Coral Hill-Halfway Rd, Glasgow, KY,42141,225204383,32197),
+(2390 Grapevine Rd, Madisonville, KY,42431,110367675,37482),
+(1580 Bethlehem Academy Rd, Cecilia, KY,42724,96934494,94553),
+(110 Frenier Rd, Laplace, LA,70068,106115981,157605),
+(621 Esplanade Ave, New Orleans, LA,70116,148976670,1351010),
+(1421 Bourbon St, New Orleans, LA,70116,73780994,746174),
+(700 Royal St, New Orleans, LA,70116,2130422789,674247),
+(833 Poland Ave, New Orleans, LA,70117,73795115,659664),
+(1725 St Roch Ave, New Orleans, LA,70117,84454465,357020),
+(519 Chretien Point Rd, Sunset, LA,70584,106135371,201998),
+(11910 Ellerbe Rd, Shreveport, LA,71115,248583379,1102188),
+(885 Washington Mountain Rd, Washington, MA,1223,2143810156,196903),
+(172 Church St, North Adams, MA,1247,2101742694,172513),
+(488 Brockelman Rd, Lancaster, MA,1523,57605491,157721),
+(16 Old Dudley Rd, Oxford, MA,1540,60027978,238143),
+(34 Eden Rd, Rockport, MA,1966,56959623,2459102),
+(22 Hardy St, Salem, MA,1970,56125282,624531),
+(356 Lafayette St, Salem, MA,1970,56123131,320417),
+(28 Howard St, Salem, MA,1970,62942898,274463),
+(310 Essex St, Salem, MA,1970,70599570,232130),
+(230 Playstead Rd, Medford, MA,2155,56274646,646432),
+(346 Pine St, Bridgewater, MA,2324,57153264,353211),
+(207 Sandwich St, Plymouth, MA,2360,246817681,585764),
+(2839 Main St, Barnstable, MA,2630,108612416,730455),
+(15 Breakwater Rd, Brewster, MA,2631,2129997044,2001755),
+(2019 Main St, Brewster, MA,2631,2135747878,819881),
+(12402 Quintette Ln, Bowie, MD,20720,37494529,500928),
+(9118 Brandywine Rd, Clinton, MD,20735,175943107,348571),
+(132 Old National Pike, Hagerstown, MD,21740,2118314896,227863),
+(115 Ivy Hill Dr, Middletown, MD,21769,36876943,467831),
+(30712 Michigan Ave, Westland, MI,48186,88759130,207692),
+(7095 107th Ave, South Haven, MI,49090,74602251,178115),
+(6282 143rd Ave, Holland, MI,49423,74588688,187228),
+(402 N Bridge St, Bellaire, MI,49615,106232277,665455),
+(2515 Tower Rd, Vanderbilt, MI,49795,106295516,143197),
+(502 Fisher St, Marquette, MI,49855,106476407,131428),
+(6940 Keats Ave S, Cottage Grove, MN,55016,2211196,1138978),
+(10 E Exchange St, St Paul, MN,55101,2091849485,121617),
+(1500 N Liberty St, Independence, MO,64050,2292277,1032036),
+(219 N Delaware St, Independence, MO,64050,2307144,355095),
+(3394 N Peace Church Ave, Joplin, MO,64801,125608505,109197),
+(1615 Grand Ave, Carthage, MO,64836,74904912,235780),
+(212 Springfield St, Reeds, MO,64859,125591131,68767),
+(1445 Harrison St, Vicksburg, MS,39180,78104213,292902),
+(2243 Waynesboro Shubuta Rd, Waynesboro, MS,39367,235512246,124320),
+(415 E Main St, Jamestown, NC,27282,55373643,2335534),
+(705 Gimghoul Rd, Chapel Hill, NC,27514,50038109,1816144),
+(307 Front St, Beaufort, NC,28516,102095687,881127),
+(511 Broad St, New Bern, NC,28560,240153791,261712),
+(341 Split Rock Rd, Boonton, NJ,7005,39497457,355783),
+(178 Clinton Rd, West Caldwell, NJ,7006,38741319,454788),
+(131 Mountain Rd, Basking Ridge, NJ,7920,39843951,690300),
+(500 W Collings Ave, Collingswood, NJ,8107,38287907,280299),
+(57 N Shore Rd, Absecon, NJ,8201,114467686,269560),
+(720 Washington St, Cape May, NJ,8204,121944221,1086906),
+(200 Congress Pl, Cape May, NJ,8204,38335336,1024195),
+(1301 Beach Ave, Cape May, NJ,8204,2146386162,617427),
+(915 E Moss Mill Rd, Absecon, NJ,8205,37808395,132397),
+(217 4th St, Fieldsboro, NJ,8505,38104964,169064),
+(56 Main St, Clinton, NJ,8809,38834605,430846),
+(76 Main St, Flemington, NJ,8822,38841585,284287),
+(423 Central Ave NW, Albuquerque, NM,87102,183435817,410688),
+(Penitentiary Rd, Santa Fe, NM,87508,295822508,1536858),
+(33 Black Canyon Rd, Santa Fe, NM,87508,102022691,591909),
+(14 W 34th St, New York, NY,10001,2119087355,1709622),
+(29 E 4th St, New York, NY,10003,30671177,1608421),
+(14 W 10th St, New York, NY,10011,2105449928,636000),
+(1 W 72nd St, New York, NY,10023,244750263,2124702),
+(1 Laveta Pl, Nyack, NY,10960,32384985,1834979),
+(108 Ocean Ave, Amityville, NY,11701,32596605,663853),
+(135 W Gate Dr, Huntington, NY,11743,59580960,6346518),
+(228 Grove Ave, Patchogue, NY,11772,59544501,264316),
+(1568 Clauverwie Rd, Middleburgh, NY,12122,84109088,217424),
+(4 Van Wyck Ln, Wappingers Falls, NY,12590,30096905,437149),
+(12 Pells Ct, Poughkeepsie, NY,12601,30108398,153211),
+(609 Craigie Clair Rd, Roscoe, NY,12776,32780862,354512),
+(302 Main St, Oneida, NY,13421,30824368,193982),
+(4700 W Main St, Fredonia, NY,14063,29922290,140353),
+(313 W 5th Ave, Columbus, OH,43201,33827874,686106),
+(2678 County Line Rd, Madison, OH,44057,203277827,192575),
+(3792 S Raccoon Rd, Canfield, OH,44406,34835744,134027),
+(6900 Maud Hughes Rd, Liberty Township, OH,45011,33163611,158233),
+(1241 Elm St, Cincinnati, OH,45202,2082287841,529631),
+(101 Front St, Marietta, OH,45750,75127551,138196),
+(1141 Pawnee Bill Rd, Pawnee, OK,74058,86095183,76669),
+(28648 SW Paris Ave, Wilsonville, OR,97070,246334578,340194),
+(707 SE 12th Ave, Portland, OR,97214,176564314,626266),
+(100 Front St, Wolf Creek, OR,97497,213060135,306630),
+(1250 Siskiyou Blvd, Ashland, OR,97520,48364735,365002),
+(20000 Caves Hwy, Cave Junction, OR,97523,213090677,176579),
+(201 Main St, Klamath Falls, OR,97601,75160402,42607),
+(1459 N Main St, Granite, OR,97877,194171110,81644),
+(284 Nutmeg Rd, Saxton, PA,16678,241425775,314831),
+(15 W Main St, Fairfield, PA,17320,2138624315,662808),
+(912 Baltimore Pike, Gettysburg, PA,17325,213029265,137271),
+(1217 Marion St, Dunmore, PA,18509,9559446,133871),
+(10 W Ferry St, New Hope, PA,18938,2098952216,1203660),
+(6300 Hardin Rd, Bensalem, PA,19020,8947572,303473),
+(321 S 4th St, Philadelphia, PA,19106,10195967,662862),
+(138 S 2nd St, Philadelphia, PA,19106,2140403040,436974),
+(111 W Mermaid Ln, Philadelphia, PA,19118,10214535,1286205),
+(501 W Allens Ln, Philadelphia, PA,19119,10214393,815682),
+(Pine St & 3rd St, Philadelphia, PA,19147,63498000,293909),
+(1260 Thornbury Rd, West Chester, PA,19382,67347507,857070),
+(1677 Round Top Rd, Burrillville, RI,2830,65889297,452385),
+(191 Cedar Springs Rd, Spartanburg, SC,29302,11831319,482876),
+(117 Wilson Rd, Union, SC,29379,120417637,263297),
+(20 S Battery, Charleston, SC,29401,2116149683,3458587),
+(135 Church St, Charleston, SC,29401,2088807331,1208237),
+(114 Rutledge Ave, Charleston, SC,29401,2138054534,533270),
+(4 Archdale St, Charleston, SC,29401,2084332934,523235),
+(15 Cannon St, Georgetown, SC,29440,10981896,554516),
+(921 Prince St, Georgetown, SC,29440,10981531,532967),
+(3083 Charleston Hwy, Aiken, SC,29801,52162277,522158),
+(1377 Gregg Hwy, Graniteville, SC,29829,303790676,150898),
+(411 Craven St, Beaufort, SC,29902,68767019,2448231),
+(501 King St, Beaufort, SC,29902,68766950,1520692),
+(Center Ave, Garretson, SD,57030,201339552,130200),
+(1210 2nd Ave NW, Aberdeen, SD,57401,299354631,150171),
+(107 W M.L.K. Blvd, Chattanooga, TN,37402,247379854,308407),
+(1311 Flanders Ln, Maryville, TN,37803,81021856,246948),
+(680 Adams Ave, Memphis, TN,38105,82697828,1508263),
+(510 Olen St, Wichita Falls, TX,76301,304077302,27138),
+(211 N Pleasant St, Hillsboro, TX,76645,87330704,145365),
+(12654 Woman Hollering Rd, Schertz, TX,78154,26183617,458417),
+(12538 Woman Hollering Rd, Schertz, TX,78154,102500056,389179),
+(638 Fort Concho, San Antonio, TX,78245,124855510,244532),
+(302 W 24th St, Austin, TX,78712,29394173,258033),
+(149 Split Rail Ln, Smithville, TX,78957,84385975,356983),
+(20850 Oatlands Plantation Ln, Leesburg, VA,20175,110692187,2305080),
+(20850 Oatlands Plantation Ln, Leesburg, VA,20175,110692187,2305080),
+(5914 Monticello Rd, Alexandria, VA,22303,51925939,436299),
+(Haw Branch Ln, Amelia Court House, VA,23002,250672391,199114),
+(4800 John Tyler Memorial Hwy, Charles City, VA,23030,79072329,561367),
+(201 High St, Farmville, VA,23901,117460000,173983),
+(459 Thomas Bridge Rd, Marion, VA,24354,113824103,104888),
+(103 Valley Center Dr, Staunton, VA,24401,249827350,749707),
+(531 Thornrose Ave, Staunton, VA,24401,249827477,493130),
+(744 Clay St, Port Townsend, WA,98368,226734768,949457),
+(651 Cleveland St, Port Townsend, WA,98368,2108950227,450590),
+(1201 Main Rd, Washington, WI,54246,104958675,372627),
+(N3754 1000th St, Eau Claire, WI,54703,104968311,126851) [42000-199]
+2019-12-04 18:54:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE PROPERTIES
+(
+ADDRESS,
+CITY,
+STATE,
+ZIPCODE,
+ZPID,
+ZESTIMATE
+)
+VALUES[*]
+(95 HECK ST, LYNN, AL,35575,121023548,49441) "; SQL statement:
+CREATE TABLE PROPERTIES
+(
+Address,
+City,
+State,
+ZipCode,
+ZPID,
+Zestimate
+)
+Values
+(95 Heck St, Lynn, AL,35575,121023548,49441) [42000-199]
+2019-12-04 18:59:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE PROPERTIES
+(
+ADDRESS,
+CITY,
+STATE,
+ZIPCODE,
+ZPID,
+ZESTIMATE
+)
+VALUES[*]
+('95 Heck St',' Lynn',' AL','35575','121023548','49441'),
+('1552 Monterey Pl',' Mobile',' AL','36604','51015139','403236'),
+('619 Ouachita 65',' Camden',' AR','71701','76220157','155609'),
+('1175 Lafayette 9',' Bradley',' AR','71826','239466433','42992'),
+('1001 Union St',' Jonesboro',' AR','72401','90770794','292109'),
+('312 S Reeves St',' Monette',' AR','72447','112607897','108888'),
+('3901 W Pioneer Rd',' Phoenix',' AZ','85086','2114321265','409394'),
+('26 Sowles Ave',' Bisbee',' AZ','85603','7390125','232346'),
+('113 E Safford St',' Tombstone',' AZ','85638','7408030','214058'),
+('2000 Slaughter House Canyon Rd',' Kingman',' AZ','86401','191822403','200011'),
+('5121 Franklin Ave',' Los Angeles',' CA','90027','20809687','4878561'),
+('2475 Glendower Pl',' Los Angeles',' CA','90027','20809000','3396227'),
+('421 N Ave 19',' Los Angeles',' CA','90031','20741187','965709'),
+('2400 Laurel Canyon Blvd',' Los Angeles',' CA','90046','145643454','2492304'),
+('8763 Wonderland Ave',' Los Angeles',' CA','90046','20800819','849317'),
+('8433 Sunset Blvd',' Los Angeles',' CA','90069','20797301','1608558'),
+('1005 N Rexford Dr',' Beverly Hills',' CA','90210','20522563','19650442'),
+('11547 Braddock Dr',' Culver City',' CA','90230','20438974','1092974'),
+('480 Fourth Ave',' San Diego',' CA','92101','80620352','422675'),
+('1500 Orange Ave',' Coronado',' CA','92118','2094761925','2379699'),
+('2541 Paso Robles St',' Oceano',' CA','93445','15437264','598674'),
+('2090 Jackson St',' San Francisco',' CA','94109','15073498','12874025'),
+('1000 Lombard St',' San Francisco',' CA','94109','2085732023','5109912'),
+('1990 California St',' San Francisco',' CA','94109','2097339728','1013023'),
+('2220 Sacramento St',' San Francisco',' CA','94115','63196697','5496607'),
+('6114 California St',' San Francisco',' CA','94121','15090939','1864990'),
+('46958 Zapotec Dr',' Fremont',' CA','94539','25027676','1966569'),
+('17110 Bodega Ln',' Bodega',' CA','94922','119688894','1498347'),
+('223 N Oregon St',' Yreka',' CA','96097','15978013','486940'),
+('420 E 11th Ave',' Denver',' CO','80203','82262709','2619701'),
+('31 S Main St',' East Windsor',' CT','6088','57708197','74192'),
+('77 Forest St',' Hartford',' CT','6105','59287335','176700'),
+('5 Schoolhouse Crossing',' Wethersfield',' CT','6109','57789526','163692'),
+('2A Hampton Rd',' Pomfret Center',' CT','6259','58117924','254755'),
+('152 Lynn Dr',' Monroe',' CT','6468','58789904','504078'),
+('208 Meriden Ave',' Southington',' CT','6489','60009341','268659'),
+('216 Gunntown Rd',' Naugatuck',' CT','6770','111099308','344751'),
+('93 Main St',' Torrington',' CT','6790','197791630','82805'),
+('401f Street NW',' Washington',' DC','20001','398609','461593'),
+('2201 North Capitol St NE',' Washington',' DC','20002','490240','741629'),
+('1321 Pennsylvania Ave NW',' Washington',' DC','20004','408571','798648'),
+('3400 Prospect St NW',' Washington',' DC','20007','88798043','9771641'),
+('2020 Massachusetts Ave NW',' Washington',' DC','20036','124230849','2817094'),
+('2600 M St NW',' Washington',' DC','20037','2093500245','1105806'),
+('1600 Pennsylvania Ave NW',' Washington',' DC','20500','84074482','415923968'),
+('1600 Pennsylvania Ave NW',' Washington',' DC','20500','84074482','415923968'),
+('530 E Cape Shores Dr',' Lewes',' DE','19958','76305264','794633'),
+('1320 N 14th St',' Fernandina Beach',' FL','32034','45938424','212554'),
+('1307 N Beach St',' Ormond Beach',' FL','32174','47997831','229707'),
+('1500 Winter Springs Blvd',' Winter Springs',' FL','32708','47657268','281359'),
+('3592 Kayla Cir',' Oviedo',' FL','32765','47728499','261137'),
+('401 Duval St',' Key West',' FL','33040','252179577','6035994'),
+('534 Eaton St',' Key West',' FL','33040','2146535798','2776571'),
+('403 Cleveland St',' Clearwater',' FL','33755','89745547','732491'),
+('5700 Oakview Ln',' Punta Gorda',' FL','33950','43564398','237506'),
+('5340 Jones Rd',' St Cloud',' FL','34771','46312049','444125'),
+('992 Ridge Ave',' Stone Mountain',' GA','30083','14527852','232099'),
+('416 Yorkhouse Rd',' Rabun Gap',' GA','30568','2143398896','1337571'),
+('436 Greensboro Rd',' Eatonton',' GA','31024','245971812','1239715'),
+('400 N Madison Ave',' Eatonton',' GA','31024','231075073','591764'),
+('151 Main St',' Irwinton',' GA','31042','112002651','151281'),
+('934 Georgia Ave',' Macon',' GA','31201','120156630','575629'),
+('107 E Broughton St',' Savannah',' GA','31401','133711921','4091993'),
+('14 E Oglethorpe Ave',' Savannah',' GA','31401','133706304','2968916'),
+('429 Bull St',' Savannah',' GA','31401','14154487','2763563'),
+('32 Abercorn St',' Savannah',' GA','31401','133713781','2515478'),
+('123 Habersham St',' Savannah',' GA','31401','133710728','2358416'),
+('102 W Hall St',' Savannah',' GA','31401','133711445','2277484'),
+('21 W Bay St',' Savannah',' GA','31401','133707114','2047030'),
+('225 E Bay St',' Savannah',' GA','31401','131743710','2038525'),
+('234 Martin Luther King Jr Blvd',' Savannah',' GA','31401','131747211','1357321'),
+('6 W Harris St',' Savannah',' GA','31401','133709220','1336155'),
+('207 W York St',' Savannah',' GA','31401','2102064510','362672'),
+('Greenwich Rd',' Savannah',' GA','31404','248655683','327002'),
+('14 Jw Williams Ct',' Jesup',' GA','31545','105440186','260319'),
+('508 E 2nd St',' Villisca',' IA','50864','127136745','22420'),
+('1952 Warren Wagon Rd',' McCall',' ID','83638','233368524','2203142'),
+('201 Spring St',' Decatur',' IL','62522','84812499','40583'),
+('20th St',' Grand Tower',' IL','62942','251226757','12891'),
+('3801 Madison Ave',' Indianapolis',' IN','46227','1167918','404069'),
+('442 W 700 N',' Valparaiso',' IN','46385','81497179','200415'),
+('302 E Beardsley Ave',' Elkhart',' IN','46514','138612207','126650'),
+('206 W Turnpike St',' Vevay',' IN','47043','115592331','371252'),
+('714 W Warren St',' Mitchell',' IN','47446','85550805','187919'),
+('917 Mill St',' Mt Vernon',' IN','47620','85667144','263256'),
+('503 N 2nd St',' Atchison',' KS','66002','122704190','467692'),
+('508 N 2nd St',' Atchison',' KS','66002','233791447','66622'),
+('935 Shawnee Rd',' Kansas City',' KS','66103','75692755','131555'),
+('5325 Douglas Ave',' Kansas City',' KS','66106','75709299','196050'),
+('1100 Fremont St',' Manhattan',' KS','66502','2113295739','144329'),
+('SW 8th & SW Van Buren',' Topeka',' KS','66612','113180032','66866'),
+('1433 Rd P',' Emporia',' KS','66801','228561571','200796'),
+('90th St',' Florence',' KS','66851','235340696','218620'),
+('702 Oak St',' El Dorado',' KS','67042','1320185','182592'),
+('420 N Depot St',' Cherryvale',' KS','67335','77240326','115661'),
+('2211 S Pope Lick Rd',' Louisville',' KY','40299','114102223','233906'),
+('120 Sycamore Rd',' Lexington',' KY','40502','124044361','1893312'),
+('201 N Mill St',' Lexington',' KY','40507','124045138','1059607'),
+('370 N Broadway',' Lexington',' KY','40508','77510826','251821'),
+('3970 Dixie Hwy',' Dry Ridge',' KY','41035','105818416','66965'),
+('227 Sutton St',' Maysville',' KY','41056','234521678','137491'),
+('1300 Winchester Ave',' Ashland',' KY','41101','105727855','88668'),
+('16 Coral Hill-Halfway Rd',' Glasgow',' KY','42141','225204383','32197'),
+('2390 Grapevine Rd',' Madisonville',' KY','42431','110367675','37482'),
+('1580 Bethlehem Academy Rd',' Cecilia',' KY','42724','96934494','94553'),
+('110 Frenier Rd',' Laplace',' LA','70068','106115981','157605'),
+('621 Esplanade Ave',' New Orleans',' LA','70116','148976670','1351010'),
+('1421 Bourbon St',' New Orleans',' LA','70116','73780994','746174'),
+('700 Royal St',' New Orleans',' LA','70116','2130422789','674247'),
+('833 Poland Ave',' New Orleans',' LA','70117','73795115','659664'),
+('1725 St Roch Ave',' New Orleans',' LA','70117','84454465','357020'),
+('519 Chretien Point Rd',' Sunset',' LA','70584','106135371','201998'),
+('11910 Ellerbe Rd',' Shreveport',' LA','71115','248583379','1102188'),
+('885 Washington Mountain Rd',' Washington',' MA','1223','2143810156','196903'),
+('172 Church St',' North Adams',' MA','1247','2101742694','172513'),
+('488 Brockelman Rd',' Lancaster',' MA','1523','57605491','157721'),
+('16 Old Dudley Rd',' Oxford',' MA','1540','60027978','238143'),
+('34 Eden Rd',' Rockport',' MA','1966','56959623','2459102'),
+('22 Hardy St',' Salem',' MA','1970','56125282','624531'),
+('356 Lafayette St',' Salem',' MA','1970','56123131','320417'),
+('28 Howard St',' Salem',' MA','1970','62942898','274463'),
+('310 Essex St',' Salem',' MA','1970','70599570','232130'),
+('230 Playstead Rd',' Medford',' MA','2155','56274646','646432'),
+('346 Pine St',' Bridgewater',' MA','2324','57153264','353211'),
+('207 Sandwich St',' Plymouth',' MA','2360','246817681','585764'),
+('2839 Main St',' Barnstable',' MA','2630','108612416','730455'),
+('15 Breakwater Rd',' Brewster',' MA','2631','2129997044','2001755'),
+('2019 Main St',' Brewster',' MA','2631','2135747878','819881'),
+('12402 Quintette Ln',' Bowie',' MD','20720','37494529','500928'),
+('9118 Brandywine Rd',' Clinton',' MD','20735','175943107','348571'),
+('132 Old National Pike',' Hagerstown',' MD','21740','2118314896','227863'),
+('115 Ivy Hill Dr',' Middletown',' MD','21769','36876943','467831'),
+('30712 Michigan Ave',' Westland',' MI','48186','88759130','207692'),
+('7095 107th Ave',' South Haven',' MI','49090','74602251','178115'),
+('6282 143rd Ave',' Holland',' MI','49423','74588688','187228'),
+('402 N Bridge St',' Bellaire',' MI','49615','106232277','665455'),
+('2515 Tower Rd',' Vanderbilt',' MI','49795','106295516','143197'),
+('502 Fisher St',' Marquette',' MI','49855','106476407','131428'),
+('6940 Keats Ave S',' Cottage Grove',' MN','55016','2211196','1138978'),
+('10 E Exchange St',' St Paul',' MN','55101','2091849485','121617'),
+('1500 N Liberty St',' Independence',' MO','64050','2292277','1032036'),
+('219 N Delaware St',' Independence',' MO','64050','2307144','355095'),
+('3394 N Peace Church Ave',' Joplin',' MO','64801','125608505','109197'),
+('1615 Grand Ave',' Carthage',' MO','64836','74904912','235780'),
+('212 Springfield St',' Reeds',' MO','64859','125591131','68767'),
+('1445 Harrison St',' Vicksburg',' MS','39180','78104213','292902'),
+('2243 Waynesboro Shubuta Rd',' Waynesboro',' MS','39367','235512246','124320'),
+('415 E Main St',' Jamestown',' NC','27282','55373643','2335534'),
+('705 Gimghoul Rd',' Chapel Hill',' NC','27514','50038109','1816144'),
+('307 Front St',' Beaufort',' NC','28516','102095687','881127'),
+('511 Broad St',' New Bern',' NC','28560','240153791','261712'),
+('341 Split Rock Rd',' Boonton',' NJ','7005','39497457','355783'),
+('178 Clinton Rd',' West Caldwell',' NJ','7006','38741319','454788'),
+('131 Mountain Rd',' Basking Ridge',' NJ','7920','39843951','690300'),
+('500 W Collings Ave',' Collingswood',' NJ','8107','38287907','280299'),
+('57 N Shore Rd',' Absecon',' NJ','8201','114467686','269560'),
+('720 Washington St',' Cape May',' NJ','8204','121944221','1086906'),
+('200 Congress Pl',' Cape May',' NJ','8204','38335336','1024195'),
+('1301 Beach Ave',' Cape May',' NJ','8204','2146386162','617427'),
+('915 E Moss Mill Rd',' Absecon',' NJ','8205','37808395','132397'),
+('217 4th St',' Fieldsboro',' NJ','8505','38104964','169064'),
+('56 Main St',' Clinton',' NJ','8809','38834605','430846'),
+('76 Main St',' Flemington',' NJ','8822','38841585','284287'),
+('423 Central Ave NW',' Albuquerque',' NM','87102','183435817','410688'),
+('Penitentiary Rd',' Santa Fe',' NM','87508','295822508','1536858'),
+('33 Black Canyon Rd',' Santa Fe',' NM','87508','102022691','591909'),
+('14 W 34th St',' New York',' NY','10001','2119087355','1709622'),
+('29 E 4th St',' New York',' NY','10003','30671177','1608421'),
+('14 W 10th St',' New York',' NY','10011','2105449928','636000'),
+('1 W 72nd St',' New York',' NY','10023','244750263','2124702'),
+('1 Laveta Pl',' Nyack',' NY','10960','32384985','1834979'),
+('108 Ocean Ave',' Amityville',' NY','11701','32596605','663853'),
+('135 W Gate Dr',' Huntington',' NY','11743','59580960','6346518'),
+('228 Grove Ave',' Patchogue',' NY','11772','59544501','264316'),
+('1568 Clauverwie Rd',' Middleburgh',' NY','12122','84109088','217424'),
+('4 Van Wyck Ln',' Wappingers Falls',' NY','12590','30096905','437149'),
+('12 Pells Ct',' Poughkeepsie',' NY','12601','30108398','153211'),
+('609 Craigie Clair Rd',' Roscoe',' NY','12776','32780862','354512'),
+('302 Main St',' Oneida',' NY','13421','30824368','193982'),
+('4700 W Main St',' Fredonia',' NY','14063','29922290','140353'),
+('313 W 5th Ave',' Columbus',' OH','43201','33827874','686106'),
+('2678 County Line Rd',' Madison',' OH','44057','203277827','192575'),
+('3792 S Raccoon Rd',' Canfield',' OH','44406','34835744','134027'),
+('6900 Maud Hughes Rd',' Liberty Township',' OH','45011','33163611','158233'),
+('1241 Elm St',' Cincinnati',' OH','45202','2082287841','529631'),
+('101 Front St',' Marietta',' OH','45750','75127551','138196'),
+('1141 Pawnee Bill Rd',' Pawnee',' OK','74058','86095183','76669'),
+('28648 SW Paris Ave',' Wilsonville',' OR','97070','246334578','340194'),
+('707 SE 12th Ave',' Portland',' OR','97214','176564314','626266'),
+('100 Front St',' Wolf Creek',' OR','97497','213060135','306630'),
+('1250 Siskiyou Blvd',' Ashland',' OR','97520','48364735','365002'),
+('20000 Caves Hwy',' Cave Junction',' OR','97523','213090677','176579'),
+('201 Main St',' Klamath Falls',' OR','97601','75160402','42607'),
+('1459 N Main St',' Granite',' OR','97877','194171110','81644'),
+('284 Nutmeg Rd',' Saxton',' PA','16678','241425775','314831'),
+('15 W Main St',' Fairfield',' PA','17320','2138624315','662808'),
+('912 Baltimore Pike',' Gettysburg',' PA','17325','213029265','137271'),
+('1217 Marion St',' Dunmore',' PA','18509','9559446','133871'),
+('10 W Ferry St',' New Hope',' PA','18938','2098952216','1203660'),
+('6300 Hardin Rd',' Bensalem',' PA','19020','8947572','303473'),
+('321 S 4th St',' Philadelphia',' PA','19106','10195967','662862'),
+('138 S 2nd St',' Philadelphia',' PA','19106','2140403040','436974'),
+('111 W Mermaid Ln',' Philadelphia',' PA','19118','10214535','1286205'),
+('501 W Allens Ln',' Philadelphia',' PA','19119','10214393','815682'),
+('Pine St & 3rd St',' Philadelphia',' PA','19147','63498000','293909'),
+('1260 Thornbury Rd',' West Chester',' PA','19382','67347507','857070'),
+('1677 Round Top Rd',' Burrillville',' RI','2830','65889297','452385'),
+('191 Cedar Springs Rd',' Spartanburg',' SC','29302','11831319','482876'),
+('117 Wilson Rd',' Union',' SC','29379','120417637','263297'),
+('20 S Battery',' Charleston',' SC','29401','2116149683','3458587'),
+('135 Church St',' Charleston',' SC','29401','2088807331','1208237'),
+('114 Rutledge Ave',' Charleston',' SC','29401','2138054534','533270'),
+('4 Archdale St',' Charleston',' SC','29401','2084332934','523235'),
+('15 Cannon St',' Georgetown',' SC','29440','10981896','554516'),
+('921 Prince St',' Georgetown',' SC','29440','10981531','532967'),
+('3083 Charleston Hwy',' Aiken',' SC','29801','52162277','522158'),
+('1377 Gregg Hwy',' Graniteville',' SC','29829','303790676','150898'),
+('411 Craven St',' Beaufort',' SC','29902','68767019','2448231'),
+('501 King St',' Beaufort',' SC','29902','68766950','1520692'),
+('Center Ave',' Garretson',' SD','57030','201339552','130200'),
+('1210 2nd Ave NW',' Aberdeen',' SD','57401','299354631','150171'),
+('107 W M.L.K. Blvd',' Chattanooga',' TN','37402','247379854','308407'),
+('1311 Flanders Ln',' Maryville',' TN','37803','81021856','246948'),
+('680 Adams Ave',' Memphis',' TN','38105','82697828','1508263'),
+('510 Olen St',' Wichita Falls',' TX','76301','304077302','27138'),
+('211 N Pleasant St',' Hillsboro',' TX','76645','87330704','145365'),
+('12654 Woman Hollering Rd',' Schertz',' TX','78154','26183617','458417'),
+('12538 Woman Hollering Rd',' Schertz',' TX','78154','102500056','389179'),
+('638 Fort Concho',' San Antonio',' TX','78245','124855510','244532'),
+('302 W 24th St',' Austin',' TX','78712','29394173','258033'),
+('149 Split Rail Ln',' Smithville',' TX','78957','84385975','356983'),
+('20850 Oatlands Plantation Ln',' Leesburg',' VA','20175','110692187','2305080'),
+('20850 Oatlands Plantation Ln',' Leesburg',' VA','20175','110692187','2305080'),
+('5914 Monticello Rd',' Alexandria',' VA','22303','51925939','436299'),
+('Haw Branch Ln',' Amelia Court House',' VA','23002','250672391','199114'),
+('4800 John Tyler Memorial Hwy',' Charles City',' VA','23030','79072329','561367'),
+('201 High St',' Farmville',' VA','23901','117460000','173983'),
+('459 Thomas Bridge Rd',' Marion',' VA','24354','113824103','104888'),
+('103 Valley Center Dr',' Staunton',' VA','24401','249827350','749707'),
+('531 Thornrose Ave',' Staunton',' VA','24401','249827477','493130'),
+('744 Clay St',' Port Townsend',' WA','98368','226734768','949457'),
+('651 Cleveland St',' Port Townsend',' WA','98368','2108950227','450590'),
+('1201 Main Rd',' Washington',' WI','54246','104958675','372627'),
+('N3754 1000th St',' Eau Claire',' WI','54703','104968311','126851') "; SQL statement:
+CREATE TABLE PROPERTIES
+(
+Address,
+City,
+State,
+ZipCode,
+ZPID,
+Zestimate
+)
+Values
+('95 Heck St',' Lynn',' AL','35575','121023548','49441'),
+('1552 Monterey Pl',' Mobile',' AL','36604','51015139','403236'),
+('619 Ouachita 65',' Camden',' AR','71701','76220157','155609'),
+('1175 Lafayette 9',' Bradley',' AR','71826','239466433','42992'),
+('1001 Union St',' Jonesboro',' AR','72401','90770794','292109'),
+('312 S Reeves St',' Monette',' AR','72447','112607897','108888'),
+('3901 W Pioneer Rd',' Phoenix',' AZ','85086','2114321265','409394'),
+('26 Sowles Ave',' Bisbee',' AZ','85603','7390125','232346'),
+('113 E Safford St',' Tombstone',' AZ','85638','7408030','214058'),
+('2000 Slaughter House Canyon Rd',' Kingman',' AZ','86401','191822403','200011'),
+('5121 Franklin Ave',' Los Angeles',' CA','90027','20809687','4878561'),
+('2475 Glendower Pl',' Los Angeles',' CA','90027','20809000','3396227'),
+('421 N Ave 19',' Los Angeles',' CA','90031','20741187','965709'),
+('2400 Laurel Canyon Blvd',' Los Angeles',' CA','90046','145643454','2492304'),
+('8763 Wonderland Ave',' Los Angeles',' CA','90046','20800819','849317'),
+('8433 Sunset Blvd',' Los Angeles',' CA','90069','20797301','1608558'),
+('1005 N Rexford Dr',' Beverly Hills',' CA','90210','20522563','19650442'),
+('11547 Braddock Dr',' Culver City',' CA','90230','20438974','1092974'),
+('480 Fourth Ave',' San Diego',' CA','92101','80620352','422675'),
+('1500 Orange Ave',' Coronado',' CA','92118','2094761925','2379699'),
+('2541 Paso Robles St',' Oceano',' CA','93445','15437264','598674'),
+('2090 Jackson St',' San Francisco',' CA','94109','15073498','12874025'),
+('1000 Lombard St',' San Francisco',' CA','94109','2085732023','5109912'),
+('1990 California St',' San Francisco',' CA','94109','2097339728','1013023'),
+('2220 Sacramento St',' San Francisco',' CA','94115','63196697','5496607'),
+('6114 California St',' San Francisco',' CA','94121','15090939','1864990'),
+('46958 Zapotec Dr',' Fremont',' CA','94539','25027676','1966569'),
+('17110 Bodega Ln',' Bodega',' CA','94922','119688894','1498347'),
+('223 N Oregon St',' Yreka',' CA','96097','15978013','486940'),
+('420 E 11th Ave',' Denver',' CO','80203','82262709','2619701'),
+('31 S Main St',' East Windsor',' CT','6088','57708197','74192'),
+('77 Forest St',' Hartford',' CT','6105','59287335','176700'),
+('5 Schoolhouse Crossing',' Wethersfield',' CT','6109','57789526','163692'),
+('2A Hampton Rd',' Pomfret Center',' CT','6259','58117924','254755'),
+('152 Lynn Dr',' Monroe',' CT','6468','58789904','504078'),
+('208 Meriden Ave',' Southington',' CT','6489','60009341','268659'),
+('216 Gunntown Rd',' Naugatuck',' CT','6770','111099308','344751'),
+('93 Main St',' Torrington',' CT','6790','197791630','82805'),
+('401f Street NW',' Washington',' DC','20001','398609','461593'),
+('2201 North Capitol St NE',' Washington',' DC','20002','490240','741629'),
+('1321 Pennsylvania Ave NW',' Washington',' DC','20004','408571','798648'),
+('3400 Prospect St NW',' Washington',' DC','20007','88798043','9771641'),
+('2020 Massachusetts Ave NW',' Washington',' DC','20036','124230849','2817094'),
+('2600 M St NW',' Washington',' DC','20037','2093500245','1105806'),
+('1600 Pennsylvania Ave NW',' Washington',' DC','20500','84074482','415923968'),
+('1600 Pennsylvania Ave NW',' Washington',' DC','20500','84074482','415923968'),
+('530 E Cape Shores Dr',' Lewes',' DE','19958','76305264','794633'),
+('1320 N 14th St',' Fernandina Beach',' FL','32034','45938424','212554'),
+('1307 N Beach St',' Ormond Beach',' FL','32174','47997831','229707'),
+('1500 Winter Springs Blvd',' Winter Springs',' FL','32708','47657268','281359'),
+('3592 Kayla Cir',' Oviedo',' FL','32765','47728499','261137'),
+('401 Duval St',' Key West',' FL','33040','252179577','6035994'),
+('534 Eaton St',' Key West',' FL','33040','2146535798','2776571'),
+('403 Cleveland St',' Clearwater',' FL','33755','89745547','732491'),
+('5700 Oakview Ln',' Punta Gorda',' FL','33950','43564398','237506'),
+('5340 Jones Rd',' St Cloud',' FL','34771','46312049','444125'),
+('992 Ridge Ave',' Stone Mountain',' GA','30083','14527852','232099'),
+('416 Yorkhouse Rd',' Rabun Gap',' GA','30568','2143398896','1337571'),
+('436 Greensboro Rd',' Eatonton',' GA','31024','245971812','1239715'),
+('400 N Madison Ave',' Eatonton',' GA','31024','231075073','591764'),
+('151 Main St',' Irwinton',' GA','31042','112002651','151281'),
+('934 Georgia Ave',' Macon',' GA','31201','120156630','575629'),
+('107 E Broughton St',' Savannah',' GA','31401','133711921','4091993'),
+('14 E Oglethorpe Ave',' Savannah',' GA','31401','133706304','2968916'),
+('429 Bull St',' Savannah',' GA','31401','14154487','2763563'),
+('32 Abercorn St',' Savannah',' GA','31401','133713781','2515478'),
+('123 Habersham St',' Savannah',' GA','31401','133710728','2358416'),
+('102 W Hall St',' Savannah',' GA','31401','133711445','2277484'),
+('21 W Bay St',' Savannah',' GA','31401','133707114','2047030'),
+('225 E Bay St',' Savannah',' GA','31401','131743710','2038525'),
+('234 Martin Luther King Jr Blvd',' Savannah',' GA','31401','131747211','1357321'),
+('6 W Harris St',' Savannah',' GA','31401','133709220','1336155'),
+('207 W York St',' Savannah',' GA','31401','2102064510','362672'),
+('Greenwich Rd',' Savannah',' GA','31404','248655683','327002'),
+('14 Jw Williams Ct',' Jesup',' GA','31545','105440186','260319'),
+('508 E 2nd St',' Villisca',' IA','50864','127136745','22420'),
+('1952 Warren Wagon Rd',' McCall',' ID','83638','233368524','2203142'),
+('201 Spring St',' Decatur',' IL','62522','84812499','40583'),
+('20th St',' Grand Tower',' IL','62942','251226757','12891'),
+('3801 Madison Ave',' Indianapolis',' IN','46227','1167918','404069'),
+('442 W 700 N',' Valparaiso',' IN','46385','81497179','200415'),
+('302 E Beardsley Ave',' Elkhart',' IN','46514','138612207','126650'),
+('206 W Turnpike St',' Vevay',' IN','47043','115592331','371252'),
+('714 W Warren St',' Mitchell',' IN','47446','85550805','187919'),
+('917 Mill St',' Mt Vernon',' IN','47620','85667144','263256'),
+('503 N 2nd St',' Atchison',' KS','66002','122704190','467692'),
+('508 N 2nd St',' Atchison',' KS','66002','233791447','66622'),
+('935 Shawnee Rd',' Kansas City',' KS','66103','75692755','131555'),
+('5325 Douglas Ave',' Kansas City',' KS','66106','75709299','196050'),
+('1100 Fremont St',' Manhattan',' KS','66502','2113295739','144329'),
+('SW 8th & SW Van Buren',' Topeka',' KS','66612','113180032','66866'),
+('1433 Rd P',' Emporia',' KS','66801','228561571','200796'),
+('90th St',' Florence',' KS','66851','235340696','218620'),
+('702 Oak St',' El Dorado',' KS','67042','1320185','182592'),
+('420 N Depot St',' Cherryvale',' KS','67335','77240326','115661'),
+('2211 S Pope Lick Rd',' Louisville',' KY','40299','114102223','233906'),
+('120 Sycamore Rd',' Lexington',' KY','40502','124044361','1893312'),
+('201 N Mill St',' Lexington',' KY','40507','124045138','1059607'),
+('370 N Broadway',' Lexington',' KY','40508','77510826','251821'),
+('3970 Dixie Hwy',' Dry Ridge',' KY','41035','105818416','66965'),
+('227 Sutton St',' Maysville',' KY','41056','234521678','137491'),
+('1300 Winchester Ave',' Ashland',' KY','41101','105727855','88668'),
+('16 Coral Hill-Halfway Rd',' Glasgow',' KY','42141','225204383','32197'),
+('2390 Grapevine Rd',' Madisonville',' KY','42431','110367675','37482'),
+('1580 Bethlehem Academy Rd',' Cecilia',' KY','42724','96934494','94553'),
+('110 Frenier Rd',' Laplace',' LA','70068','106115981','157605'),
+('621 Esplanade Ave',' New Orleans',' LA','70116','148976670','1351010'),
+('1421 Bourbon St',' New Orleans',' LA','70116','73780994','746174'),
+('700 Royal St',' New Orleans',' LA','70116','2130422789','674247'),
+('833 Poland Ave',' New Orleans',' LA','70117','73795115','659664'),
+('1725 St Roch Ave',' New Orleans',' LA','70117','84454465','357020'),
+('519 Chretien Point Rd',' Sunset',' LA','70584','106135371','201998'),
+('11910 Ellerbe Rd',' Shreveport',' LA','71115','248583379','1102188'),
+('885 Washington Mountain Rd',' Washington',' MA','1223','2143810156','196903'),
+('172 Church St',' North Adams',' MA','1247','2101742694','172513'),
+('488 Brockelman Rd',' Lancaster',' MA','1523','57605491','157721'),
+('16 Old Dudley Rd',' Oxford',' MA','1540','60027978','238143'),
+('34 Eden Rd',' Rockport',' MA','1966','56959623','2459102'),
+('22 Hardy St',' Salem',' MA','1970','56125282','624531'),
+('356 Lafayette St',' Salem',' MA','1970','56123131','320417'),
+('28 Howard St',' Salem',' MA','1970','62942898','274463'),
+('310 Essex St',' Salem',' MA','1970','70599570','232130'),
+('230 Playstead Rd',' Medford',' MA','2155','56274646','646432'),
+('346 Pine St',' Bridgewater',' MA','2324','57153264','353211'),
+('207 Sandwich St',' Plymouth',' MA','2360','246817681','585764'),
+('2839 Main St',' Barnstable',' MA','2630','108612416','730455'),
+('15 Breakwater Rd',' Brewster',' MA','2631','2129997044','2001755'),
+('2019 Main St',' Brewster',' MA','2631','2135747878','819881'),
+('12402 Quintette Ln',' Bowie',' MD','20720','37494529','500928'),
+('9118 Brandywine Rd',' Clinton',' MD','20735','175943107','348571'),
+('132 Old National Pike',' Hagerstown',' MD','21740','2118314896','227863'),
+('115 Ivy Hill Dr',' Middletown',' MD','21769','36876943','467831'),
+('30712 Michigan Ave',' Westland',' MI','48186','88759130','207692'),
+('7095 107th Ave',' South Haven',' MI','49090','74602251','178115'),
+('6282 143rd Ave',' Holland',' MI','49423','74588688','187228'),
+('402 N Bridge St',' Bellaire',' MI','49615','106232277','665455'),
+('2515 Tower Rd',' Vanderbilt',' MI','49795','106295516','143197'),
+('502 Fisher St',' Marquette',' MI','49855','106476407','131428'),
+('6940 Keats Ave S',' Cottage Grove',' MN','55016','2211196','1138978'),
+('10 E Exchange St',' St Paul',' MN','55101','2091849485','121617'),
+('1500 N Liberty St',' Independence',' MO','64050','2292277','1032036'),
+('219 N Delaware St',' Independence',' MO','64050','2307144','355095'),
+('3394 N Peace Church Ave',' Joplin',' MO','64801','125608505','109197'),
+('1615 Grand Ave',' Carthage',' MO','64836','74904912','235780'),
+('212 Springfield St',' Reeds',' MO','64859','125591131','68767'),
+('1445 Harrison St',' Vicksburg',' MS','39180','78104213','292902'),
+('2243 Waynesboro Shubuta Rd',' Waynesboro',' MS','39367','235512246','124320'),
+('415 E Main St',' Jamestown',' NC','27282','55373643','2335534'),
+('705 Gimghoul Rd',' Chapel Hill',' NC','27514','50038109','1816144'),
+('307 Front St',' Beaufort',' NC','28516','102095687','881127'),
+('511 Broad St',' New Bern',' NC','28560','240153791','261712'),
+('341 Split Rock Rd',' Boonton',' NJ','7005','39497457','355783'),
+('178 Clinton Rd',' West Caldwell',' NJ','7006','38741319','454788'),
+('131 Mountain Rd',' Basking Ridge',' NJ','7920','39843951','690300'),
+('500 W Collings Ave',' Collingswood',' NJ','8107','38287907','280299'),
+('57 N Shore Rd',' Absecon',' NJ','8201','114467686','269560'),
+('720 Washington St',' Cape May',' NJ','8204','121944221','1086906'),
+('200 Congress Pl',' Cape May',' NJ','8204','38335336','1024195'),
+('1301 Beach Ave',' Cape May',' NJ','8204','2146386162','617427'),
+('915 E Moss Mill Rd',' Absecon',' NJ','8205','37808395','132397'),
+('217 4th St',' Fieldsboro',' NJ','8505','38104964','169064'),
+('56 Main St',' Clinton',' NJ','8809','38834605','430846'),
+('76 Main St',' Flemington',' NJ','8822','38841585','284287'),
+('423 Central Ave NW',' Albuquerque',' NM','87102','183435817','410688'),
+('Penitentiary Rd',' Santa Fe',' NM','87508','295822508','1536858'),
+('33 Black Canyon Rd',' Santa Fe',' NM','87508','102022691','591909'),
+('14 W 34th St',' New York',' NY','10001','2119087355','1709622'),
+('29 E 4th St',' New York',' NY','10003','30671177','1608421'),
+('14 W 10th St',' New York',' NY','10011','2105449928','636000'),
+('1 W 72nd St',' New York',' NY','10023','244750263','2124702'),
+('1 Laveta Pl',' Nyack',' NY','10960','32384985','1834979'),
+('108 Ocean Ave',' Amityville',' NY','11701','32596605','663853'),
+('135 W Gate Dr',' Huntington',' NY','11743','59580960','6346518'),
+('228 Grove Ave',' Patchogue',' NY','11772','59544501','264316'),
+('1568 Clauverwie Rd',' Middleburgh',' NY','12122','84109088','217424'),
+('4 Van Wyck Ln',' Wappingers Falls',' NY','12590','30096905','437149'),
+('12 Pells Ct',' Poughkeepsie',' NY','12601','30108398','153211'),
+('609 Craigie Clair Rd',' Roscoe',' NY','12776','32780862','354512'),
+('302 Main St',' Oneida',' NY','13421','30824368','193982'),
+('4700 W Main St',' Fredonia',' NY','14063','29922290','140353'),
+('313 W 5th Ave',' Columbus',' OH','43201','33827874','686106'),
+('2678 County Line Rd',' Madison',' OH','44057','203277827','192575'),
+('3792 S Raccoon Rd',' Canfield',' OH','44406','34835744','134027'),
+('6900 Maud Hughes Rd',' Liberty Township',' OH','45011','33163611','158233'),
+('1241 Elm St',' Cincinnati',' OH','45202','2082287841','529631'),
+('101 Front St',' Marietta',' OH','45750','75127551','138196'),
+('1141 Pawnee Bill Rd',' Pawnee',' OK','74058','86095183','76669'),
+('28648 SW Paris Ave',' Wilsonville',' OR','97070','246334578','340194'),
+('707 SE 12th Ave',' Portland',' OR','97214','176564314','626266'),
+('100 Front St',' Wolf Creek',' OR','97497','213060135','306630'),
+('1250 Siskiyou Blvd',' Ashland',' OR','97520','48364735','365002'),
+('20000 Caves Hwy',' Cave Junction',' OR','97523','213090677','176579'),
+('201 Main St',' Klamath Falls',' OR','97601','75160402','42607'),
+('1459 N Main St',' Granite',' OR','97877','194171110','81644'),
+('284 Nutmeg Rd',' Saxton',' PA','16678','241425775','314831'),
+('15 W Main St',' Fairfield',' PA','17320','2138624315','662808'),
+('912 Baltimore Pike',' Gettysburg',' PA','17325','213029265','137271'),
+('1217 Marion St',' Dunmore',' PA','18509','9559446','133871'),
+('10 W Ferry St',' New Hope',' PA','18938','2098952216','1203660'),
+('6300 Hardin Rd',' Bensalem',' PA','19020','8947572','303473'),
+('321 S 4th St',' Philadelphia',' PA','19106','10195967','662862'),
+('138 S 2nd St',' Philadelphia',' PA','19106','2140403040','436974'),
+('111 W Mermaid Ln',' Philadelphia',' PA','19118','10214535','1286205'),
+('501 W Allens Ln',' Philadelphia',' PA','19119','10214393','815682'),
+('Pine St & 3rd St',' Philadelphia',' PA','19147','63498000','293909'),
+('1260 Thornbury Rd',' West Chester',' PA','19382','67347507','857070'),
+('1677 Round Top Rd',' Burrillville',' RI','2830','65889297','452385'),
+('191 Cedar Springs Rd',' Spartanburg',' SC','29302','11831319','482876'),
+('117 Wilson Rd',' Union',' SC','29379','120417637','263297'),
+('20 S Battery',' Charleston',' SC','29401','2116149683','3458587'),
+('135 Church St',' Charleston',' SC','29401','2088807331','1208237'),
+('114 Rutledge Ave',' Charleston',' SC','29401','2138054534','533270'),
+('4 Archdale St',' Charleston',' SC','29401','2084332934','523235'),
+('15 Cannon St',' Georgetown',' SC','29440','10981896','554516'),
+('921 Prince St',' Georgetown',' SC','29440','10981531','532967'),
+('3083 Charleston Hwy',' Aiken',' SC','29801','52162277','522158'),
+('1377 Gregg Hwy',' Graniteville',' SC','29829','303790676','150898'),
+('411 Craven St',' Beaufort',' SC','29902','68767019','2448231'),
+('501 King St',' Beaufort',' SC','29902','68766950','1520692'),
+('Center Ave',' Garretson',' SD','57030','201339552','130200'),
+('1210 2nd Ave NW',' Aberdeen',' SD','57401','299354631','150171'),
+('107 W M.L.K. Blvd',' Chattanooga',' TN','37402','247379854','308407'),
+('1311 Flanders Ln',' Maryville',' TN','37803','81021856','246948'),
+('680 Adams Ave',' Memphis',' TN','38105','82697828','1508263'),
+('510 Olen St',' Wichita Falls',' TX','76301','304077302','27138'),
+('211 N Pleasant St',' Hillsboro',' TX','76645','87330704','145365'),
+('12654 Woman Hollering Rd',' Schertz',' TX','78154','26183617','458417'),
+('12538 Woman Hollering Rd',' Schertz',' TX','78154','102500056','389179'),
+('638 Fort Concho',' San Antonio',' TX','78245','124855510','244532'),
+('302 W 24th St',' Austin',' TX','78712','29394173','258033'),
+('149 Split Rail Ln',' Smithville',' TX','78957','84385975','356983'),
+('20850 Oatlands Plantation Ln',' Leesburg',' VA','20175','110692187','2305080'),
+('20850 Oatlands Plantation Ln',' Leesburg',' VA','20175','110692187','2305080'),
+('5914 Monticello Rd',' Alexandria',' VA','22303','51925939','436299'),
+('Haw Branch Ln',' Amelia Court House',' VA','23002','250672391','199114'),
+('4800 John Tyler Memorial Hwy',' Charles City',' VA','23030','79072329','561367'),
+('201 High St',' Farmville',' VA','23901','117460000','173983'),
+('459 Thomas Bridge Rd',' Marion',' VA','24354','113824103','104888'),
+('103 Valley Center Dr',' Staunton',' VA','24401','249827350','749707'),
+('531 Thornrose Ave',' Staunton',' VA','24401','249827477','493130'),
+('744 Clay St',' Port Townsend',' WA','98368','226734768','949457'),
+('651 Cleveland St',' Port Townsend',' WA','98368','2108950227','450590'),
+('1201 Main Rd',' Washington',' WI','54246','104958675','372627'),
+('N3754 1000th St',' Eau Claire',' WI','54703','104968311','126851') [42000-199]
+2019-12-04 19:00:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE PROPERTIES
+(
+ADDRESS,
+CITY,
+STATE,
+ZIPCODE,
+ZPID,
+ZESTIMATE
+)
+VALUES[*]
+('95 Heck St',' Lynn',' AL','35575','121023548','49441') "; SQL statement:
+CREATE TABLE PROPERTIES
+(
+Address,
+City,
+State,
+ZipCode,
+ZPID,
+Zestimate
+)
+Values
+('95 Heck St',' Lynn',' AL','35575','121023548','49441') [42000-199]
+2019-12-04 19:00:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE PROPERTIES
+(
+ADDRESS,
+CITY,
+STATE,
+ZIPCODE,
+ZPID,
+ZESTIMATE
+)
+VALUES[*]
+('95 Heck St',' Lynn',' AL','35575','121023548','49441'),
+('1552 Monterey Pl',' Mobile',' AL','36604','51015139','403236') "; SQL statement:
+CREATE TABLE PROPERTIES
+(
+Address,
+City,
+State,
+ZipCode,
+ZPID,
+Zestimate
+)
+Values
+('95 Heck St',' Lynn',' AL','35575','121023548','49441'),
+('1552 Monterey Pl',' Mobile',' AL','36604','51015139','403236') [42000-199]
+2019-12-04 20:20:46 jdbc[4]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:242)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:182)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:299)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:782)
+	at org.h2.server.web.WebApp.login(WebApp.java:1004)
+	at org.h2.server.web.WebApp.process(WebApp.java:219)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 15 more
+2019-12-04 20:28:35 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PROPERTIES
+WHERE ADDRESS = ''95 heck st[*]'"; SQL statement:
+SELECT * FROM PROPERTIES
+WHERE ADDRESS = ''95 heck st' [42000-199]
+2019-12-04 20:50:40 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at sample.connManager.<init>(connManager.java:19)
+	at sample.Main.main(Main.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:473)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:372)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1051)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 37 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 31 more
+2019-12-04 20:52:33 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at sample.connManager.<init>(connManager.java:19)
+	at sample.Main.main(Main.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:473)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:372)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1051)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 37 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 31 more
+2019-12-04 20:52:57 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at sample.connManager.<init>(connManager.java:19)
+	at sample.Main.main(Main.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:473)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:372)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1051)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 37 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 31 more
+2019-12-04 20:53:15 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at sample.connManager.<init>(connManager.java:19)
+	at sample.Main.main(Main.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:473)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:372)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1051)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 37 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 31 more
+2019-12-04 20:53:26 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at sample.connManager.<init>(connManager.java:19)
+	at sample.Main.main(Main.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:473)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:372)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1051)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 37 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 31 more
+2019-12-04 20:53:59 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at sample.connManager.<init>(connManager.java:19)
+	at sample.Main.main(Main.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:473)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:372)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1051)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 37 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 31 more
+2019-12-04 20:56:54 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at sample.connManager.<init>(connManager.java:19)
+	at sample.Main.main(Main.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:473)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:372)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1051)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 37 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 31 more
+2019-12-04 21:25:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PROPERTIES WHEREADDRESS LIKE[*] '%a%' ORCITY LIKE '%%' ORSTATE LIKE '%%' ORZIPCODE LIKE '%%'"; SQL statement:
+SELECT * FROM PROPERTIES WHEREADDRESS LIKE '%a%' ORCITY LIKE '%%' ORSTATE LIKE '%%' ORZIPCODE LIKE '%%' [42000-199]
+2019-12-04 21:49:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PROPERTIES WHERE ADDRESS LIKE '%a%' ORCITY[*] LIKE '%%' ORSTATE LIKE '%%' ORZIPCODE LIKE '%%'"; SQL statement:
+SELECT * FROM PROPERTIES WHERE ADDRESS LIKE '%a%' ORCITY LIKE '%%' ORSTATE LIKE '%%' ORZIPCODE LIKE '%%' [42000-199]
+2019-12-04 21:53:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PROPERTIES WHERE [*]"; expected "NOT, EXISTS, INTERSECTS"; SQL statement:
+SELECT * FROM PROPERTIES WHERE  [42001-199]
+2019-12-05 01:54:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ZPIDS" not found [42122-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3188)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3287)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:314)
+	at sample.connManager.selectProperties(connManager.java:68)
+	at sample.Controller.findProperties(Controller.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1784)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Node.fireEvent(Node.java:8865)
+	at javafx.controls/javafx.scene.control.Button.fire(Button.java:200)
+	at javafx.controls/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:206)
+	at javafx.controls/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3876)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.access$1300(Scene.java:3604)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2613)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:395)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-12-05 02:04:51 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ZPIDS" not found [42122-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3188)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3287)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:314)
+	at sample.connManager.selectProperties(connManager.java:68)
+	at sample.Controller.findProperties(Controller.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1784)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Node.fireEvent(Node.java:8865)
+	at javafx.controls/javafx.scene.control.Button.fire(Button.java:200)
+	at javafx.controls/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:206)
+	at javafx.controls/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3876)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.access$1300(Scene.java:3604)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2613)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:395)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-12-05 02:04:58 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ZPIDS" not found [42122-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3188)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3287)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:314)
+	at sample.connManager.selectProperties(connManager.java:68)
+	at sample.Controller.findProperties(Controller.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1784)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Node.fireEvent(Node.java:8865)
+	at javafx.controls/javafx.scene.control.Button.fire(Button.java:200)
+	at javafx.controls/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:206)
+	at javafx.controls/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3876)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.access$1300(Scene.java:3604)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2613)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:395)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-12-05 02:07:21 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at sample.connManager.<init>(connManager.java:23)
+	at sample.Controller.findProperties(Controller.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:83)
+	at javafx.fxml/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1784)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1670)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Node.fireEvent(Node.java:8865)
+	at javafx.controls/javafx.scene.control.Button.fire(Button.java:200)
+	at javafx.controls/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:206)
+	at javafx.controls/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3876)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.access$1300(Scene.java:3604)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2613)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:395)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 88 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/ShawnsPC/OneDrive - Florida Gulf Coast University/Object Oriented Pro/Zillow - Haunted/DB/productDB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 82 more
