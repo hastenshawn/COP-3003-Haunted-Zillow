@@ -1,0 +1,9 @@
+2019-10-24 15:29:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEES" not found; SQL statement:
+SELECT * FROM employees; [42102-199]
+2019-10-24 15:34:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEES" not found; SQL statement:
+SELECT * FROM employees; [42102-199]
+2019-10-24 15:36:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEES" not found; SQL statement:
+SELECT * FROM employees; [42102-199]
